@@ -36,6 +36,7 @@ namespace Infrastructure.Querys
             }
             if (to != null)
             {
+                to = to.Value.Date.AddDays(1).AddTicks(-1);
                 query = query.Where(s => s.Date <= to);
             }
 

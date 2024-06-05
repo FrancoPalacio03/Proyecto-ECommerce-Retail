@@ -32,7 +32,7 @@ display: flex;
   right: 0;
   color: #494949;
   background-color: #fff;
-  width: 400px;
+  width: 420px;
   z-index: 1;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
@@ -183,4 +183,15 @@ display: flex;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
+.quantity-label {
+  padding-top: 3px;
+}
+
+.quantity-field {
+  padding-bottom: 16px;
+  width: 50px; 
+}
+
+
 

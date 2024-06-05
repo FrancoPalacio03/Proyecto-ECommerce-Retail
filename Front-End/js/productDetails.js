@@ -1,27 +1,30 @@
 function showProductDetails(product) {
-    const url = `https://localhost:7021/api/ProductControler/${product.id}`;
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('product-title').textContent = data.name;
-        document.getElementById('product-price').textContent = `$${new Intl.NumberFormat('en-ES', { maximumSignificantDigits: 3 }).format(data.price)}`;
-        document.getElementById('product-price-especial').textContent = `$${new Intl.NumberFormat('en-ES', { maximumSignificantDigits: 3 }).format(data.price - ((data.discount * data.price) / 100))}`;
-        document.getElementById('product-image').src = data.imageUrl;
-        document.getElementById('product-description').textContent = data.description;
-  
-        const modal = new bootstrap.Modal(document.getElementById('productModal'));
-        modal.show();
+  const url = `https://localhost:7021/api/ProductControler/${product.id}`;
+  document.getElementById('product-quantity').value = 1;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const formattedPrice = new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(data.price);
+      const discountedPrice = new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(data.price - ((data.discount * data.price) / 100));
 
-        const addToCartButton = document.getElementById('cart-button');
+      document.getElementById('product-title').textContent = data.name;
+      document.getElementById('product-price').textContent = `$${formattedPrice}`;
+      document.getElementById('product-price-especial').textContent = `$${discountedPrice}`;
+      document.getElementById('product-image').src = data.imageUrl;
+      document.getElementById('product-description').textContent = data.description;
+      const modal = new bootstrap.Modal(document.getElementById('productModal'));
+      modal.show();
+
+      const addToCartButton = document.getElementById('cart-button');
       addToCartButton.onclick = () => {
         const quantity = document.getElementById('product-quantity').value;
         addToCart(product, quantity);
       };
-      })
-      .catch(error => console.error('Error fetching product details:', error));
-  }
+    })
+    .catch(error => console.error('Error fetching product details:', error));
+}
 
-  
+
 document.addEventListener('DOMContentLoaded', () => {
   const quantityInput = document.getElementById('product-quantity');
   const decreaseButton = document.querySelector('.btn-decrease');

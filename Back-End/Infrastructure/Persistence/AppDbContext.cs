@@ -55,7 +55,7 @@ namespace Infrastructure.Persistence
                 entity.HasKey(s => s.SaleId);
                 entity.Property(s => s.SaleId).ValueGeneratedOnAdd();
                 entity.Property(s => s.TotalPay).IsRequired().HasColumnType("decimal(12,2)");
-                entity.Property(s => s.SubTotal).IsRequired().HasColumnType("decimal(12,2)");
+                entity.Property(s => s.Subtotal).IsRequired().HasColumnType("decimal(12,2)");
                 entity.Property(s => s.TotalDiscount).IsRequired().HasColumnType("decimal(12,2)");
                 entity.Property(s => s.Taxes).IsRequired().HasColumnType("decimal(12,2)");
                 entity.Property(s => s.Date).IsRequired();
@@ -505,9 +505,6 @@ namespace Infrastructure.Persistence
                 }
                 );
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Database=ECommerceTP;User Id=sa;Password=031102fP#;TrustServerCertificate=true;");
-        }
+        
     }
 }

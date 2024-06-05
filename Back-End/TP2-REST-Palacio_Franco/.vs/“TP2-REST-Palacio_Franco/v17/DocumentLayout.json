@@ -1,0 +1,777 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\controllers\\salecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:controllers\\salecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\controllers\\productcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:controllers\\productcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\\u201Ctp2-rest-palacio_franco.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:\u201Ctp2-rest-palacio_franco.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|c:\\users\\franc\\onedrive\\escritorio\\documentos\\c sharp\\proyecto software\\proyecto-ecommerce\\back-end\\tp2-rest-palacio_franco\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D0E4B146-A056-4FBB-B3A2-2A075BF7E77B}|\u201CTP2-REST-Palacio_Franco.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Infrastructure\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\SaleCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Persistence\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\ProductQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleProductResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\ProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleProductMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\ProductCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Migrations\\20240604153643_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\SaleProduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleProductRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\CategoryMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\ProductMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleGetResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\CategoryResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\CategoryService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductGetResponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleProductQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ICategoryMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleProductMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleQuery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductCommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\IProductMapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ApiError.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\ProductRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SaleProductService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleProductService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleProductService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleProductService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleProductService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwBAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:44:47.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\SaleService.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAIwFoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T18:40:16.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SaleCommand.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\SaleCommand.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\SaleCommand.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\SaleCommand.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\SaleCommand.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwCMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T05:39:35.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SaleControler.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Controllers\\SaleControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\SaleControler.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Controllers\\SaleControler.cs",
+              "RelativeToolTip": "Controllers\\SaleControler.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T18:20:02.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductControler.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Controllers\\ProductControler.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductControler.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Controllers\\ProductControler.cs",
+              "RelativeToolTip": "Controllers\\ProductControler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T21:53:19.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SaleResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleResponse.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:47:59.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Persistence\\AppDbContext.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAjwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T22:44:00.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaleQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleQuery.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwCcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:13:18.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:21:01.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:08:46.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Sale.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Sale.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Sale.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\Sale.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T20:21:40.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\ProductQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\ProductQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\ProductQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\ProductQuery.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAuwC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:21:08.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAEwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T22:42:42.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ISaleProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductQuery.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:17:46.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SaleProductResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleProductResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleProductResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleProductResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleProductResponse.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:49:04.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\ProductService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\ProductService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\ProductService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAawDIAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T22:21:22.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SaleProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleProductMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleProductMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleProductMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleProductMapper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:30:45.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SaleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\SaleMapper.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAADwvzUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:02:23.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ISaleProductService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\saleProduct\\ISaleProductService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBAAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:44:24.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\ProductCommand.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\ProductCommand.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\ProductCommand.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Command\\ProductCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T02:36:27.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20240604153643_initial.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Migrations\\20240604153643_initial.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Migrations\\20240604153643_initial.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Migrations\\20240604153643_initial.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Migrations\\20240604153643_initial.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAgwGIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T15:36:44.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SaleRequest.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleRequest.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:32:04.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-30T22:54:04.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SaleProduct.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\SaleProduct.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\SaleProduct.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Domain\\Entities\\SaleProduct.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Domain\\Entities\\SaleProduct.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T00:08:04.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAwwA4AAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T22:07:52.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T05:36:07.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductResponse.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwA4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:48:16.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SaleProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleProductRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleProductRequest.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleProductRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\SaleProductRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:32:29.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CategoryMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\CategoryMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\CategoryMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\CategoryMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\CategoryMapper.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T02:08:43.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\ProductMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\ProductMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Mappers\\ProductMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Mappers\\ProductMapper.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwCsAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T01:43:37.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SaleGetResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleGetResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleGetResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleGetResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\SaleGetResponse.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:40:09.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CategoryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\CategoryResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\CategoryResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\CategoryResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\CategoryResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T20:09:13.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\CategoryService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\UseCases\\CategoryService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\UseCases\\CategoryService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:19:41.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProductGetResponse.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductGetResponse.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductGetResponse.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductGetResponse.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ProductGetResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:39:34.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SaleProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleProductQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleProductQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleProductQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Infrastructure\\Querys\\SaleProductQuery.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAawCEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T21:04:04.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ICategoryMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ICategoryMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ICategoryMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ICategoryMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ICategoryMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:04:28.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ISaleService.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleService.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleService.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAowA8AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:12:24.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ISaleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T18:02:45.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ISaleProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleProductMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleProductMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleProductMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\ISaleProductMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIAwwA0AAACMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:30:00.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ISaleQuery.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleQuery.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleQuery.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleQuery.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\sale\\ISaleQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAD4vwgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T19:13:06.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductCommand.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductCommand.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductCommand.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\product\\IProductCommand.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAvwA8AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T03:39:29.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IProductMapper.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\IProductMapper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\IProductMapper.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\IProductMapper.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Interfaces\\IMappers\\IProductMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T01:53:17.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ApiError.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ApiError.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ApiError.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Responce\\ApiError.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Responce\\ApiError.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T20:02:31.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProductRequest.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\ProductRequest.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\ProductRequest.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\TP2-REST-Palacio_Franco\\Application\\Request\\ProductRequest.cs",
+              "RelativeToolTip": "..\\..\\..\\TP2-REST-Palacio_Franco\\Application\\Request\\ProductRequest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T19:08:14.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-30T22:46:51.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Infrastructure\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\Infrastructure\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T22:06:16.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "\u201CTP2-REST-Palacio_Franco.http",
+              "DocumentMoniker": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\\u201CTP2-REST-Palacio_Franco.http",
+              "RelativeDocumentMoniker": "\u201CTP2-REST-Palacio_Franco.http",
+              "ToolTip": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\\u201CTP2-REST-Palacio_Franco.http",
+              "RelativeToolTip": "\u201CTP2-REST-Palacio_Franco.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-30T22:03:27.818Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

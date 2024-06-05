@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("“TP2-REST-Palacio_Franco")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2f896c94586420a2272c40d33cf0499c452c27c")]
 [assembly: System.Reflection.AssemblyProductAttribute("“TP2-REST-Palacio_Franco")]
 [assembly: System.Reflection.AssemblyTitleAttribute("“TP2-REST-Palacio_Franco")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

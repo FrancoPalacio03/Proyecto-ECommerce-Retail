@@ -31,7 +31,6 @@ async function loadProducts(page) {
   let selectedCategories = [];
   document.querySelectorAll('.category-checkbox:checked').forEach(checkbox => {
     selectedCategories.push(checkbox.value);
-    console.log(selectedCategories)
   });
 
   let categoriesQueryString = ''
@@ -41,13 +40,12 @@ async function loadProducts(page) {
   const searchQuery = document.getElementById('search-input').value.trim();
   const offset = (page - 1) * productsPerPage;
   const url = searchQuery
-    ? `https://localhost:7021/api/ProductControler?${categoriesQueryString}&name=${encodeURIComponent(searchQuery)}&limit=${productsPerPage}&offset=${offset}`
+    ? `https://localhost:7021/api/ProductControler?&name=${encodeURIComponent(searchQuery)}&limit=${productsPerPage}&offset=${offset}`
     : `https://localhost:7021/api/ProductControler?${categoriesQueryString}&limit=${productsPerPage}&offset=${offset}`;
 
-  console.log(url)
   const loader = document.getElementById('loader');
   const noResults = document.getElementById('no-results');
-  const productsContainer = document.getElementById('products-container');
+  const productsContainer = document.getElementById('cards-container');
   const paginationContainer = document.getElementById('pagination-container');
 
   loader.style.display = 'block';
@@ -82,19 +80,24 @@ async function loadProducts(page) {
 }
 
 function renderProducts(products) {
-  const productContainer = document.getElementById('products-container');
+  const productContainer = document.getElementById('cards-container');
   productContainer.innerHTML = '';
+  
   products.forEach(product => {
+    const price = parseFloat(product.price);
+    const discount = parseFloat(product.discount) || 0;
+    const discountedPrice = price - ((discount * price) / 100);
+
     const productCard = `
-      <div class="product-container" data-product='${JSON.stringify(product)}'>
-        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-        <div class="product-details">
-          <h1 class="product-title">${product.name}</h1>
+      <div class="card-container" data-product='${JSON.stringify(product)}'>
+        <img src="${product.imageUrl}" alt="${product.name}" class="card-image">
+        <div class="card-details">
+          <h1 class="card-title">${product.name}</h1>
           <div class="pricing">
             <strong>Precio Total:</strong>
-            <p class="price">$${new Intl.NumberFormat('en-ES', { maximumSignificantDigits: 3 }).format(product.price)}</p>
+            <p class="price">$${new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(price)}</p>
             <strong>Precio Especial Con Descuento:</strong>
-            <p class="price">$${new Intl.NumberFormat('en-ES', { maximumSignificantDigits: 3 }).format(product.price - ((product.discount * product.price) / 100))}</p>
+            <p class="price">$${new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(discountedPrice)}</p>
           </div>
           <button class="delivery-button">Llega mañana</button>
         </div>
@@ -103,7 +106,7 @@ function renderProducts(products) {
     productContainer.insertAdjacentHTML('beforeend', productCard);
   });
 
-  document.querySelectorAll('.product-container').forEach(card => {
+  document.querySelectorAll('.card-container').forEach(card => {
     card.addEventListener('click', (event) => {
       const productData = JSON.parse(card.getAttribute('data-product'));
       showProductDetails(productData);

@@ -24,7 +24,6 @@ builder.Services.AddScoped<IProductCommand, ProductCommand>();
 builder.Services.AddScoped<IProductQuery, ProductQuery>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-builder.Services.AddScoped<ISaleProductCommand, SaleProductCommand>();
 builder.Services.AddScoped<ISaleProductQuery, SaleProductQuery>();
 builder.Services.AddScoped<ISaleProductService, SaleProductService>();
 

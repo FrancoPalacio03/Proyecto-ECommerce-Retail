@@ -32,54 +32,29 @@ namespace Application.UseCases
         }
         public async Task<SaleResponse> CreateSale(SaleRequest saleRequest)
         {
-            Dictionary<ProductResponse, int> productsWithQuantity = await ObtainProducts(saleRequest);
-            decimal subTotal = CalculateSubTotal(productsWithQuantity);
-            decimal totalDiscount = CalculateTotalDiscount(productsWithQuantity);
-            decimal taxes = 1.21m; 
-            decimal totalPay = CalculateTotal(subTotal, totalDiscount, taxes);
             int totalQuantity = 0;
-            List<SaleProduct> saleProducts = new List<SaleProduct>();
 
-            if (saleRequest.TotalPayed == totalPay)
+            Dictionary<ProductResponse, int> productsWithQuantity = await ObtainProducts(saleRequest.Products);
+            Sale saleCreated = await ReturnSale(productsWithQuantity);
+
+            List<SaleProduct> saleProducts = await _saleProductServices.ReturnSaleProducts(saleRequest.Products, saleCreated);
+            saleCreated.SaleProducts = saleProducts;
+
+
+            if (saleRequest.TotalPayed == saleCreated.TotalPay)
             {
                 foreach (KeyValuePair<ProductResponse, int> product in productsWithQuantity)
                 {
                     totalQuantity += product.Value;
                 }
-                var sale = new Sale
-                {
-                    TotalPay = totalPay,
-                    SubTotal = subTotal,
-                    TotalDiscount = totalDiscount,
-                    Taxes = taxes,
-                    Date = DateTime.Now,
-                    SaleProducts = saleProducts
-                };
-
-                var createdSale = await _saleCommand.InsertSale(sale);
-
-                foreach (KeyValuePair<ProductResponse, int> product in productsWithQuantity)
-                {
-                    SaleProduct saleProduct = new SaleProduct
-                    {
-                        Product = product.Key.Id,
-                        Sale = sale.SaleId,
-                        Quantity = product.Value,
-                        Price = product.Key.Price,
-                        Discount = product.Key.Discount
-                    };
-                    saleProducts.Add(saleProduct);
-                    await _saleProductServices.CreateSaleProduct(saleProduct);
-                }
-
-                var saleResponse = await _saleMapper.GetSaleResponse(createdSale, totalQuantity);
-
-                return saleResponse;
+                var createdSale = await _saleCommand.InsertSale(saleCreated);
             }
             else
             {
                 throw new Exception("Total Pay calculate error");
             }
+
+            return await _saleMapper.GetSaleResponse(saleCreated, totalQuantity); ;
         }
 
         public async Task<List<SaleGetResponse>> GetAll(DateTime? from, DateTime? to)
@@ -110,6 +85,31 @@ namespace Application.UseCases
             }
         }
 
+        private async Task<Sale> ReturnSale(Dictionary<ProductResponse, int> productsWithQuantity)
+        {
+            decimal subtotal = CalculateSubTotal(productsWithQuantity);
+            decimal totalDiscount = CalculateTotalDiscount(productsWithQuantity);
+            decimal taxes = subtotal * 0.21m;
+            decimal totalPay = Math.Round(CalculateTotal(subtotal, totalDiscount, taxes),2);
+            int totalQuantity = 0;
+
+
+            foreach (KeyValuePair<ProductResponse, int> product in productsWithQuantity)
+            {
+                totalQuantity += product.Value;
+            }
+            var saleCreated = new Sale
+            {
+                TotalPay = totalPay,
+                Subtotal = subtotal,
+                TotalDiscount = totalDiscount,
+                Taxes = taxes,
+                Date = DateTime.Now,
+            };
+
+            return await Task.FromResult(saleCreated);
+        }
+
 
         private async Task<bool> CheckSaleId(int id)
         {
@@ -118,7 +118,7 @@ namespace Application.UseCases
 
         private decimal CalculateTotal(decimal subTotal, decimal totalDiscount, decimal taxes)
         {
-            decimal total = (subTotal - totalDiscount) * taxes;
+            decimal total = (subTotal - totalDiscount) + taxes;
             return total;
         }
 
@@ -147,10 +147,10 @@ namespace Application.UseCases
             return totalDiscount;
         }
 
-        public async Task<Dictionary<ProductResponse, int>> ObtainProducts(SaleRequest request)
+        public async Task<Dictionary<ProductResponse, int>> ObtainProducts(List<SaleProductRequest> saleProductRequests)
         {
             Dictionary<ProductResponse, int> productsAndQuantities = new Dictionary<ProductResponse, int>();
-            foreach (SaleProductRequest saleProduct in request.Products)
+            foreach (SaleProductRequest saleProduct in saleProductRequests)
             {
                 ProductResponse currentProduct = await _productService.GetProductById(saleProduct.ProductId);
                 productsAndQuantities.Add(currentProduct, saleProduct.Quantity);

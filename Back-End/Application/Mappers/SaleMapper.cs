@@ -51,7 +51,7 @@ namespace Application.Mappers
                 Id = sale.SaleId,
                 TotalPay = sale.TotalPay,
                 TotalQuantity = totalQuantity,
-                Subtotal = sale.SubTotal,
+                Subtotal = sale.Subtotal,
                 TotalDiscount = sale.TotalDiscount,
                 Taxes = sale.Taxes,
                 Date = sale.Date,

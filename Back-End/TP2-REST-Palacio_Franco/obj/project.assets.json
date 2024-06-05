@@ -4541,9 +4541,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Retail.csproj",
-      "projectName": "Retail",
-      "projectPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\Retail.csproj",
+      "projectUniqueName": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\“TP2-REST-Palacio_Franco.csproj",
+      "projectName": "“TP2-REST-Palacio_Franco",
+      "projectPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\“TP2-REST-Palacio_Franco.csproj",
       "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\obj\\",
       "projectStyle": "PackageReference",

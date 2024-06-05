@@ -16,25 +16,16 @@ namespace Application.UseCases
 {
     public class SaleProductService : ISaleProductService
     {
-        private readonly ISaleProductCommand _saleProductCommand;
         private readonly ISaleProductQuery _saleProductQuery;
         private readonly ISaleProductMapper _saleProductMapper;
         private readonly ISaleService _saleService;
+        private readonly IProductService _productService;
 
-        public SaleProductService(ISaleProductCommand command, ISaleProductQuery query, ISaleProductMapper saleProductMapper)
+        public SaleProductService(ISaleProductQuery query, ISaleProductMapper saleProductMapper, IProductService productService)
         {
-            _saleProductCommand = command;
             _saleProductQuery = query;
             _saleProductMapper = saleProductMapper;
-        }
-        public async Task CreateSaleProduct(SaleProduct saleProduct)
-        {
-            await _saleProductCommand.InsertSaleProduct(saleProduct);
-        }
-
-        public async Task DeleteSaleProduct(SaleProduct saleProduct)
-        {
-            await _saleProductCommand.RemoveSaleProduct(saleProduct);
+            _productService= productService;
         }
 
         public async Task<List<SaleProduct>> GetAll()
@@ -56,7 +47,24 @@ namespace Application.UseCases
             return saleProductResponses;
         }
 
-
+        public async Task<List<SaleProduct>> ReturnSaleProducts(List<SaleProductRequest> saleProductRequests, Sale sale)
+        {
+            List<SaleProduct> saleProducts = new List<SaleProduct>();
+            foreach (var saleProduct in saleProductRequests)
+            {
+                var product = await _productService.GetProductById(saleProduct.ProductId); 
+                SaleProduct saleProductCreated = new SaleProduct
+                {
+                    Product = saleProduct.ProductId,
+                    Sale = sale.SaleId,
+                    Quantity = saleProduct.Quantity,
+                    Price = product.Price,
+                    Discount = product.Discount,
+                };
+                saleProducts.Add(saleProductCreated);
+            }
+            return await Task.FromResult(saleProducts);
+        }
 
     }
 }

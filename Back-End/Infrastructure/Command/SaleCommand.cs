@@ -1,11 +1,6 @@
 ﻿using Application.Interfaces.sale;
 using Domain.Entities;
 using Infrastructure.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Command
 {
@@ -20,7 +15,7 @@ namespace Infrastructure.Command
 
         public async Task<Sale> InsertSale(Sale sale)
         {
-            _context.Add(sale);
+            _context.Sales.Add(sale);
             await _context.SaveChangesAsync();
             return sale;
         }

@@ -37,7 +37,7 @@ public class SaleControler : Controller
     [ProducesResponseType(typeof(ProductGetResponse), 201)]
     [ProducesResponseType(typeof(ApiError), 409)]
     [ProducesResponseType(typeof(ApiError), 404)]
-    [HttpOptions]
+    [HttpPost]
     public async Task<IActionResult> CreateSale(SaleRequest request)
     {
         try
@@ -51,7 +51,7 @@ public class SaleControler : Controller
         }
     }
 
-    [HttpOptions("{id}")]
+    [HttpGet("{id}")]
     [ProducesResponseType(typeof(ProductGetResponse), 201)]
     [ProducesResponseType(typeof(ApiError), 409)]
     [ProducesResponseType(typeof(ApiError), 404)]
