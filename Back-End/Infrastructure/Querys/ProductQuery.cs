@@ -2,11 +2,6 @@
 using Domain.Entities;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Querys
 {
@@ -14,9 +9,9 @@ namespace Infrastructure.Querys
     {
         private readonly AppDbContext _appDbContext;
 
-        public ProductQuery(AppDbContext appDbContext) 
+        public ProductQuery(AppDbContext appDbContext)
         {
-            _appDbContext= appDbContext; 
+            _appDbContext = appDbContext;
         }
 
         public async Task<List<Product>> GetListProducts(string? name, int? limit, int? offset, int[]? categories)
@@ -42,7 +37,7 @@ namespace Infrastructure.Querys
             {
                 query = query.Take(limit.Value);
             }
-            
+
 
             return await query.ToListAsync();
         }
@@ -53,6 +48,15 @@ namespace Infrastructure.Querys
             var product = await _appDbContext.Products
                         .Include(p => p.category)
                         .FirstOrDefaultAsync(p => p.ProductId == productId);
+            return product;
+
+        }
+
+        public async Task<Product> GetProductByName(String productName)
+        {
+            var product = await _appDbContext.Products
+                        .Include(p => p.category)
+                        .FirstOrDefaultAsync(p => p.Name == productName);
             return product;
 
         }

@@ -31,7 +31,7 @@ document.getElementById('sale-btn').addEventListener('click', function() {
     });
 
     const tax = parseFloat(subTotal * 0.21);
-    const total = parseFloat(subTotal + tax - totalDiscount);
+    const total = parseFloat((subTotal - totalDiscount)*1.21);
 
     document.getElementById('subtotal-details').textContent = `$${new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(subTotal)}`;
     document.getElementById('discount-details').textContent = `-$${new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(totalDiscount)}`;
@@ -52,7 +52,7 @@ document.getElementById('checkout-btn').addEventListener('click', function() {
         totalPayed: parseFloat(document.getElementById('total-details').textContent.replace(/[$,]/g, ''))
     };
 
-    fetch('https://localhost:7021/api/SaleControler', {
+    fetch(saleUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

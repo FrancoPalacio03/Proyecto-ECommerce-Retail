@@ -26,6 +26,10 @@ body {
   padding-top: 15px;
 }
 
+#categories{
+  padding-top: 3  0px;
+}
+
 /* Navbar */
 #navbar-container {
   background-color: #131313;
@@ -62,7 +66,7 @@ img {
 }
 
 #allSales-btn {
-  padding: 5px 10px;
+  padding: 5px 385px;
 }
 
 /* Card */
@@ -146,4 +150,21 @@ footer {
 
 .list-group-item {
   background: #e3e3e3 !important;
+}
+
+#loader{
+  display: none;
+}
+
+#no-results{
+  display: none;
+}
+
+.notification-image{
+  width: 35px;
+  height: 35px;
+}
+
+.comments{
+  padding-bottom: 10px;
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GlD8tMVyY6ilW39O7xIWcwW2nZMpRVGiYeZgbj9q8J2llVtkdpqC1e13jCST6ekWCludalW411dzBAOYqljgwA==",
+  "dgSpecHash": "ZyxMOutbZJw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\ANYASHOPP RETAIL\\Back-End\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

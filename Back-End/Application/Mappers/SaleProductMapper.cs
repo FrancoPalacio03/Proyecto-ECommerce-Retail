@@ -1,7 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Application.Interfaces.IMappers;
-using Application.Request;
+﻿using Application.Interfaces.IMappers;
 using Application.Responce;
 using Domain.Entities;
 
@@ -17,11 +14,11 @@ namespace Application.Mappers
         }
 
         public async Task<SaleProductResponse> GetSaleProductResponse(SaleProduct saleProduct)
-        {           
+        {
 
             var response = new SaleProductResponse
             {
-                Id = saleProduct.ShoppingCartId, 
+                Id = saleProduct.ShoppingCartId,
                 productId = saleProduct.Product.ToString(),
                 Quantity = saleProduct.Quantity,
                 Price = saleProduct.Price,

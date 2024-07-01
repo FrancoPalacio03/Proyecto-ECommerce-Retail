@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XDFDOPfXa1VOpsZk2mZcT1BsA6pfjexFbHHBdLexdU28XbENDzFUZrb56YX9ZajqiiOJ1pufNMhC7pz3kNTOCw==",
+  "dgSpecHash": "GZsYuW1bVqs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\Proyecto-Ecommerce\\Back-End\\TP2-REST-Palacio_Franco\\“TP2-REST-Palacio_Franco.csproj",
+  "projectFilePath": "C:\\Users\\franc\\OneDrive\\Escritorio\\Documentos\\C SHARP\\PROYECTO SOFTWARE\\ANYASHOPP RETAIL\\Back-End\\TP2-REST-Palacio_Franco\\“TP2-REST-Palacio_Franco.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

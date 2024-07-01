@@ -43,52 +43,52 @@ namespace Infrastructure.Migrations
                         new
                         {
                             CategoryId = 1,
-                            Name = "Electrodomesticos"
+                            Name = "Electrodomésticos"
                         },
                         new
                         {
                             CategoryId = 2,
-                            Name = "Baño"
+                            Name = "Tecnología y Electrónica"
                         },
                         new
                         {
                             CategoryId = 3,
-                            Name = "Herramientas"
+                            Name = "Moda y Accesorios"
                         },
                         new
                         {
                             CategoryId = 4,
-                            Name = "Automotor"
+                            Name = "Hogar y Decoración"
                         },
                         new
                         {
                             CategoryId = 5,
-                            Name = "Electricidad"
+                            Name = "Salud y Belleza"
                         },
                         new
                         {
                             CategoryId = 6,
-                            Name = "Plomeria"
+                            Name = "Deportes y Ocio"
                         },
                         new
                         {
                             CategoryId = 7,
-                            Name = "Cocina"
+                            Name = "Juguetes y Juegos"
                         },
                         new
                         {
                             CategoryId = 8,
-                            Name = "Muebleria"
+                            Name = "Alimentos y Bebidas"
                         },
                         new
                         {
                             CategoryId = 9,
-                            Name = "Tecnologia"
+                            Name = "Libros y Material Educativo"
                         },
                         new
                         {
                             CategoryId = 10,
-                            Name = "Jardin"
+                            Name = "Jardinería y Bricolaje"
                         });
                 });
 
@@ -129,7 +129,7 @@ namespace Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            ProductId = new Guid("219dda57-2a6f-476a-9357-66c164f58d05"),
+                            ProductId = new Guid("a6639346-560a-4e65-a78e-67174acba753"),
                             Category = 1,
                             Description = "Climatizar tus espacios a lo largo del año es sin duda algo importante para tu comodidad y la de tus seres queridos. Contar con un aire acondicionado con función frío/calor es la mejor decisión. Con este aire Nex conseguí una mejor relación costo-beneficio.",
                             Discount = 10,
@@ -139,7 +139,7 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            ProductId = new Guid("7a80400a-e4cd-439f-a672-5f86b8892a7b"),
+                            ProductId = new Guid("7b486a22-ad72-4c94-8f5d-6bf48eec14c6"),
                             Category = 1,
                             Description = "El ventilador PIONEER es mas econmico ya que ahorra un 50% de energia electrica\r\nEs practico, facil de trasladar y adaptabilidad.\r\nSus aspas Metalicas lo hacen un producto de gran durabilidad.\r\nsu base de apoyo firme y su rejilla protectora metalica lo hacen un producto seguro",
                             Discount = 12,
@@ -149,7 +149,7 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            ProductId = new Guid("90f0e7e0-aa7a-4e9b-9c69-a4295f28cb2d"),
+                            ProductId = new Guid("fc87702b-7273-4e07-a6f6-6eaaf5474b19"),
                             Category = 1,
                             Description = "Esta heladera cuenta con vidrio templado en todos los estantes, ofreciendo calidad y resistencia. Los estantes son flexibles con altura regulable y cómodos anaqueles desmontables en la puerta.Los estantes se pueden mover en altura para optimizar el espacio, en función de las necesidades de guardado.",
                             Discount = 16,
@@ -159,7 +159,7 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            ProductId = new Guid("270c0748-534c-480f-ac14-1d09a6295d15"),
+                            ProductId = new Guid("c57b8365-59ce-4ae5-94a7-f7eb922e7094"),
                             Category = 1,
                             Description = "Marca lider del mercado - 6 KG - 800 RPM - Eficiencia energetica A+. Color blanco.",
                             Discount = 5,
@@ -169,363 +169,363 @@ namespace Infrastructure.Migrations
                         },
                         new
                         {
-                            ProductId = new Guid("113bfa1f-4b06-4e03-83e3-a2d36b3d2db2"),
+                            ProductId = new Guid("6a0f28e0-a314-4dae-83e7-c83094cd1fdf"),
                             Category = 2,
-                            Description = "El sanitario 2 piezas Hervas Blanco es la elección perfecta para tu baño. Con su diseño elegante y moderno, este sanitario no solo cumple con su función principal, sino que también agrega un toque de estilo a tu espacio.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/325325-1200-1200?v=637928028976170000&width=1200&height=1200&aspect=true",
-                            Name = "Inodoro Two Piece con Depósito y Asiento",
-                            Price = 141700m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("fc7872d3-35c0-4e40-b190-65c9334f45e8"),
-                            Category = 2,
-                            Description = "Este juego de baño con tapa de ciprés 103/N2 CR es la elección perfecta para darle un toque de elegancia y estilo a tu baño.",
-                            Discount = 25,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/356354-1200-1200?v=638223661536300000&width=1200&height=1200&aspect=true",
-                            Name = "Juego De Ducha Embutida Con Transferencia Cipres 103 - N2 Cromo",
-                            Price = 58996m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("d8185dfe-13c7-49a2-86b9-a37a4efb3869"),
-                            Category = 2,
-                            Description = "Bienvenido al mundo de la elegancia y la funcionalidad para tu baño. Nuestros accesorios están diseñados pensando en la excelencia en cada detalle. Con un enfoque meticuloso en la calidad y la durabilidad, estos accesorios están destinados a transformar tu espacio de baño en un oasis de comodidad y estilo.",
-                            Discount = 12,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/375419-1200-1200?v=638478528895830000&width=1200&height=1200&aspect=true",
-                            Name = "Jabonera Cromo Andez Klub",
-                            Price = 17000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("2e6897ea-e576-4033-b274-78bbb8fdc26a"),
-                            Category = 2,
-                            Description = "set acc. de baño 5 piezas marayui imp",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/340426-1200-1200?v=638085454583770000&width=1200&height=1200&aspect=true",
-                            Name = "Set de accesorios de baño Vessanti Marayui 5 piezas",
-                            Price = 29000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("e69966fb-7d1f-4cb2-88cc-259aa811a88d"),
-                            Category = 3,
-                            Description = "El Taladro Perc Brushless 18V + 2 Bat de Easy es la herramienta perfecta para llevar a cabo tus proyectos de bricolaje con facilidad y eficiencia.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/324566-1200-1200?v=637915901462570000&width=1200&height=1200&aspect=true",
-                            Name = "Taladro Atornillador Percutor Bosch Gsb 18V-50",
-                            Price = 842000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("c838915d-b910-4a3a-a0f9-e9170bb39271"),
-                            Category = 3,
-                            Description = "La amoladora Bosch GWS 700 es la herramienta perfecta para aquellos que buscan potencia y precisión en sus proyectos de bricolaje. Con su motor de 220V, esta amoladora es capaz de realizar cortes y pulidos de alta calidad en una amplia variedad de materiales. Además, incluye 5 discos adicionales, lo que te permite comenzar a trabajar de inmediato sin tener que preocuparte por comprar accesorios adicionales.",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/367406-1200-1200?v=638357448136970000&width=1200&height=1200&aspect=true",
-                            Name = "Amoladora Bosch Gws 700 + 5 Discos 220V",
-                            Price = 126000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("fd642e4b-a907-4cfc-87c7-6cdf52c28855"),
-                            Category = 3,
-                            Description = "La Hormigonera Deper 150 LTS es la compañera perfecta para tus proyectos de construcción.\r\n\r\nCon su capacidad de 150 litros, podrás mezclar grandes cantidades de hormigón de manera eficiente y rápida.",
-                            Discount = 20,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/273755-1200-1200?v=637651577792600000&width=1200&height=1200&aspect=true",
-                            Name = "Hormigonera Compacta 130 L",
-                            Price = 464550m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("b8a0aa0c-ffd9-49e5-93bb-eed52befec6a"),
-                            Category = 3,
-                            Description = "La Sierra Circular Bosch 1500W 184mm es la herramienta perfecta para llevar tus proyectos de bricolaje al siguiente nivel. Con su potente motor de 1500W, esta sierra te brinda la potencia necesaria para cortar madera, plástico y otros materiales con facilidad y precisión.",
-                            Discount = 5,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/300355-1200-1200?v=637665764833530000&width=1200&height=1200&aspect=true",
-                            Name = "Sierra Circular Bosch Gks 150 220V",
-                            Price = 265000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("2d2d7f0f-0583-4d32-a294-4f4be6da9d48"),
-                            Category = 4,
-                            Description = "Diseño simétrico, optimizado para un excelente fluir de agua y menor riesgo de acuaplanning sobre superficie mojada. Excelente dirigibilidad y desempeño superior en caminos secos y mojados. Construcción con bandas de alta flexibilidad para un gran confort. Alta resistencia a los Impactos. Bajo nivel sonoro proporcionando una conducción placentera.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/307886-1200-1200?v=637671544058430000&width=1200&height=1200&aspect=true",
-                            Name = "Cubierta 175/65 R 14 82T Tl Maxisport",
-                            Price = 128000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("cb3de379-622a-4d80-9e22-588aaeb8edc8"),
-                            Category = 4,
-                            Description = "Aceite 2 T Para Moto Bardahl 1Lt de alto rendimiento, cuide y disfrute de su moto con la calidad del aceite Bardahl",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/280723-1200-1200?v=637651623825000000&width=1200&height=1200&aspect=true",
-                            Name = "Aceite 2 T Para Moto Bardahl 1Lt",
-                            Price = 7600m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("836d5c34-c8e2-4dbb-a109-f8dc53ee5874"),
-                            Category = 4,
-                            Description = "Fundas cubre asientos autos universal 9 piezas Sparco Este fabricado con polyester y cuenta con 2mm de espuma. Una tela suave y resistente que le brindará protección a tu asiento y será confortable para el uso diario.",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/341974-1200-1200?v=638107683258130000&width=1200&height=1200&aspect=true",
-                            Name = "Funda Cubre Asiento Sparco Rjo/Ngro 9Pc",
-                            Price = 36370m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("198730db-c341-41cd-89fb-de467348d3f9"),
-                            Category = 4,
-                            Description = "Minicompresor Sincrolamp 250 Psi 12 Volts con Accesorios para inflar",
-                            Discount = 20,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/275875-1200-1200?v=637651592014930000&width=1200&height=1200&aspect=true",
-                            Name = "Minicompresor Sincrolamp",
-                            Price = 16500m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("9b9c5bec-1a8a-4a54-9f68-3c82c30a2064"),
-                            Category = 5,
-                            Description = "Un interruptor termomagnético o llave térmica, es un dispositivo capaz de interrumpir la corriente eléctrica de un circuito cuando ésta sobrepasa ciertos valores máximos. Su funcionamiento se basa en dos de los efectos producidos por la circulación de corriente en un circuito: el magnético y el térmico.El dispositivo consta, por tanto, de dos partes, un electroimán y una lámina bimetálica, conectadas en serie y por las que circula la corriente que va hacia la carga. Al igual que los fusibles, los interruptores magnetotérmicos protegen la instalación contra sobrecargas y cortocircuito.",
-                            Discount = 7,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/373534-1200-1200?v=638442978290670000&width=1200&height=1200&aspect=true",
-                            Name = "Interruptor Termomagnético 2x20A Sica",
-                            Price = 7590m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("1d9a84cf-695e-4e06-aab8-89c81aa299da"),
-                            Category = 5,
-                            Description = "El sensor de movimiento exterior enciende la luminaria automáticamente al detectar presencia en la zona se puede programar el tiempo de encendido, regular la sensibilidad y anular la función de no encender de día.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/336980-1200-1200?v=638016257102730000&width=1200&height=1200&aspect=true",
-                            Name = "Sensor De Movimiento Exterior Hasta 500",
-                            Price = 25520m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("f67da113-44f7-4788-84f7-6977659b6d06"),
-                            Category = 5,
-                            Description = "Energizer® es líder en la industria de proveer energía a la vida de las personas de forma responsable.\r\nHasta 10 años de vida útil.\r\n* Disponible en el mercado desde 1991 Uso Recomendado Ideal para equipos de uso continuo, controles remotos, radios, linternas, juguetes y reproductores de CD.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/326041-1200-1200?v=637933357696170000&width=1200&height=1200&aspect=true",
-                            Name = "Pila Energizer Max Aaa X4 Unidades Rojo 9,3X11X2 Unidadescm",
-                            Price = 4330m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("20995732-e34b-4969-9954-2c58ad0f4356"),
-                            Category = 5,
-                            Description = "Cargador Pro1 USB para AA / AAA\r\nESPECIFICACIONES DEL PRODUCTO:\r\nPARA PILAS RECARGABLES Y BATERIAS\r\nTAMAÑOS AA - AAA\r\nMODELO DE CORTE MANUAL\r\nCARGA USB: INCLUYE CABLE.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/353020-1200-1200?v=638195003302800000&width=1200&height=1200&aspect=true ",
-                            Name = "Cargador Pilas 4 Canales AA/AAA C/Corte Manual",
-                            Price = 12290m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("2e172cfb-105d-4ffc-b924-c1997d2d824e"),
-                            Category = 6,
-                            Description = "La estructura tricapa del tanque Rotoplas Gris garantiza la opacidad del interior del tanque, necesaria para evitar la fotosíntesis (desarrollo de algas y verdín) microorganismos y nasterias asociadas.",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/302366-1200-1200?v=637665767442600000&width=1200&height=1200&aspect=true",
-                            Name = "Tanque de Agua Tricapa Gris 1100 L",
-                            Price = 232980m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("08a1dae2-b705-4386-b1d8-30aa129a1306"),
-                            Category = 6,
-                            Description = "La bomba Pluvius permite aumentar la presión de agua de una red hidráulica.\r\n\r\nEste producto cuenta con una entrada o tubo que aspira el agua y, posteriormente, este líquido es impulsado por un motor hacia el tubo de salida. Esto hace que el agua salga con mucha más presión y rapidez.\r\n\r\n",
-                            Discount = 20,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/282119-1200-1200?v=637651632967100000&width=1200&height=1200&aspect=true",
-                            Name = "Bombas Presurizadoras 260 W",
-                            Price = 164100m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("5de687fe-5005-4e47-bf9c-07bdfc20f798"),
-                            Category = 6,
-                            Description = "Su unión deslizante asegura máxima estanqueidad en instalaciones empotradas, enterradas y a la vista, bajo techo y a la intemperie, en construcciones de todo tipo.\r\nMODELO: Pileta de patio M110.\r\nCONEXIÓN: Unión deslizante con guarnición monolabio.\r\nUSO RECOMENDADO: Desagüe cloacal y cloacal.",
-                            Discount = 12,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/284828-1200-1200?v=637651648774300000&width=1200&height=1200&aspect=true",
-                            Name = "Pileta Duratop X De Patio",
-                            Price = 8420m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("c157c1e4-86b9-4081-a62b-313923580c19"),
-                            Category = 6,
-                            Description = "El Biodigestor SEPTITANK es un sistema de tratamiento primario de aguas residuales domésticas.\r\nIdeal para reemplazar eficientemente las fosas sépticas.\r\nMinimiza el impacto sobre el medio ambiente separando efluentes sólidos (bioabono) y líquidos (agua para riego).",
+                            Description = "Potente smartphone con cámara de 108 MP, pantalla Dynamic AMOLED 2X de 6.8 pulgadas, 12 GB de RAM y 256 GB de almacenamiento.",
                             Discount = 8,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/281732-1200-1200?v=637651630950970000&width=1200&height=1200&aspect=true",
-                            Name = "Biodigestor Para 7 Personas Septitank",
-                            Price = 523385m
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTJfPPESvNHvqeb6FpNHdloDc-rMakxCHqu8fExoC6pMNepveNoUEgbeoX1S5fy8wFOZ82lWK6WeNrsGpS1KPXOTbh3mZ1qsyCuK5Qrq27HSFcUdT3Ugu30&usqp=CAE",
+                            Name = "Smartphone Samsung Galaxy S22 Ultra",
+                            Price = 1499999m
                         },
                         new
                         {
-                            ProductId = new Guid("9de70006-4869-479c-ae74-1fe3d9fff50a"),
-                            Category = 7,
-                            Description = "Mesada de Cocina Durafort Sin Zócalo 140x60 Cm Negro",
+                            ProductId = new Guid("35dfcdce-a6be-4794-b887-fc82d6df6987"),
+                            Category = 2,
+                            Description = "Portátil gaming ultraligero con procesador AMD Ryzen 9 5900HS, pantalla QHD de 14 pulgadas, 16 GB de RAM y SSD de 1 TB.",
                             Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/333955-1200-1200?v=637992095004270000&width=1200&height=1200&aspect=true",
-                            Name = "Mesada De Cocina Durafort",
-                            Price = 138240m
+                            ImageUrl = "https://acdn.mitiendanube.com/stores/001/907/418/products/1-0db142b8c6c121127217116552781441-1024-1024.webp",
+                            Name = "Laptop ASUS ROG Zephyrus G14",
+                            Price = 1899999m
                         },
                         new
                         {
-                            ProductId = new Guid("2ad6c19b-5cce-404f-9c98-bfa53d8220f7"),
-                            Category = 7,
-                            Description = "La marca FV es un referente en el rubro de las griferías porque ofrece productos confortables y decorativos desde hace casi 100 años. El modelo 423/M4 es una solución estética y de gran calidad para tu hogar.",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/365635-1600-1600?v=638350437287400000&width=1600&height=1600&aspect=true",
-                            Name = "Juego Cocina Monocomando Compacta 423/M4 Cromo",
-                            Price = 73000m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("55bbc386-5767-42cb-9c0b-cb26e8063786"),
-                            Category = 7,
-                            Description = "Este juego de monocomando para mesada de cocina Arizona Alto es la elección perfecta para aquellos que buscan combinar estilo y funcionalidad en su hogar.\r\n\r\nCon un diseño moderno y elegante, este juego de monocomando se convertirá en el centro de atención de tu cocina.",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/276856-1200-1200?v=637651598506800000&width=1200&height=1200&aspect=true",
-                            Name = "Juego Monocomando Mesada Cocina Arizona Alto",
-                            Price = 91600m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("98de0248-e6ca-4d4b-aca4-3b2aa5ae2d26"),
-                            Category = 7,
-                            Description = "La cocina sorrento nos ofrece una línea de vanguardia, moderna, con tonos cálidos; su diseño modular resulta ideal para espacios reducidos sin sacrificarestilo y con la calidadque nos caracteriza.sistema de apertura con perfil de aluminio de doble agarre. ofrece tres configuraciones de medidas distintas que brindan versatilidad para responder a cualquier espacio",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/370610-1200-1200?v=638417995289500000&width=1200&height=1200&aspect=true",
-                            Name = "Alacena Sorrento De 140 Cm",
-                            Price = 134400m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("5e17c86d-a7ac-433c-b66f-e2d231f2cf3b"),
-                            Category = 8,
-                            Description = "El Placard 6P 4CJ Nordic es la elección perfecta para aquellos que buscan una solución de almacenamiento elegante y funcional.\r\n\r\nCon sus dimensiones de 176x47x180 cm, este placard ofrece amplio espacio para guardar y organizar tu ropa y accesorios.",
-                            Discount = 20,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/369976-1200-1200?v=638404070109600000&width=1200&height=1200&aspect=true",
-                            Name = "Placard 6 Puertas 4 Cajones Nordic 176X47X180 Cm Miel",
-                            Price = 294400m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("f5c2815d-8346-4efd-985a-9eab62f84524"),
-                            Category = 8,
-                            Description = "La cómoda natural 3C 100X43X83 R.Miel es una pieza de mobiliario que combina funcionalidad y estilo en un solo diseño. Con sus dimensiones de 100x43x83, esta cómoda ofrece amplio espacio de almacenamiento para tus pertenencias, manteniendo todo organizado y al alcance de la mano. Su acabado en miel le da un toque cálido y natural, perfecto para complementar cualquier estilo de decoración.",
-                            Discount = 20,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/359052-1200-1200?v=638237262971500000&width=1200&height=1200&aspect=true",
-                            Name = "Cómoda Natural 3C 100X43X83 Cm R.Miel",
-                            Price = 113050m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("d841c999-e200-4c31-9669-fdcaf4f0f0ee"),
-                            Category = 8,
-                            Description = "colchon+somier resor sab 90x190x50 pmd Conjunto que incluye colchón y sommier Colchón de Resortes Bicónicos y marco perimetral de acero templado. Sommier de madera estacionada con patas de madera maciza a rosca. Tela Sábana en composé, detalles en tapa y lateral blanco, totalmente matelaseado. Medidas totales de juego armado 90x190x50 de alto (+/- 2 cm tolerancia)",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/338391-1200-1200?v=638031630115200000&width=1200&height=1200&aspect=true",
-                            Name = "Colchon+Somier Resor Sab 90X190X50 Pmd",
-                            Price = 127597m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("3948c5e1-91e7-448c-832a-78728657576b"),
-                            Category = 8,
-                            Description = "Mejora tu Dormitorio con esta mesa de Luz con dos cajones con guias correderas metalicas en color Natural de diseño escandinavo con piezas en melamina texturada roble miel texturada, patas de madera maciza reforzadas de gran espesor que le da fortaleza y excelente laqueado mate que da muy buena terminación.",
-                            Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/359059-1200-1200?v=638237264297870000&width=1200&height=1200&aspect=true",
-                            Name = "Mesa De Luz Natural 40X40X60 Cm R.Miel",
-                            Price = 62815m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("d9224164-84cd-4f4c-8326-c874ad4dd36d"),
-                            Category = 9,
-                            Description = "Considerada una de las marcas más innovadoras en el rubro de electrónica, Samsung ofrece productos de calidad y se destaca por su especialización en unidades de almacenamiento.\r\nEl 990 Pro MZ-V9P1T0B/AM está adaptado para que puedas acceder de forma rápida a tus documentos digitales gracias a su tecnología en estado sólido.",
-                            Discount = 12,
-                            ImageUrl = "https://http2.mlstatic.com/D_NQ_NP_716164-MLU74725749394_032024-O.webp",
-                            Name = "Unidad De Estado Sólido Samsung 990 Pro Pci-e 4.0 Nvme",
-                            Price = 219999m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("e1a69a0e-c82b-41b4-8c9c-67bd25795a1d"),
-                            Category = 9,
-                            Description = "Notebook Gamer Lenovo Legion 5 15ACH6A WQHD 2K 15.6\" R5 5600H 16GB (2x8GB) 512GB SSD NVME RX6600M 8GB W11 165Hz Silver",
-                            Discount = 10,
-                            ImageUrl = "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_38593_Notebook_Gamer_Lenovo_Legion_5_15ACH6A_WQHD_2K_15.6__R5_5600H_16GB__2x8GB__512GB_SSD_NVME_RX6600M_8GB_W11_165Hz_Silver_107e6074-grn.jpg",
-                            Name = "Notebook Lenovo Legion 5 15ACH6A",
-                            Price = 1153600m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("2f9b3557-6c10-4985-b282-e84d9243a78e"),
-                            Category = 9,
-                            Description = "Velocidad Del Core Base\r\n1366 mhz\r\nVelocidad De Memoria\r\n8000 mhz\r\nTipo De Memoria\r\nGDDR5\r\nCapacidad De Memoria\r\n8 gb\r\nInterface De Memoria\r\n256 bits\r\nVelocidad Del Core Turbo\r\n1386 mhz\r\nTipos De Procesos\r\nStream\r\nCantidad De Procesos\r\n2048",
-                            Discount = 20,
-                            ImageUrl = "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_39191_Placa_de_Video_XFX_Radeon_RX_580_8GB_GDDR5_GTS_XXX_8c7b9091-grn.jpg",
-                            Name = "Placa de Video XFX Radeon RX 580 8GB GDDR5",
-                            Price = 185400m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("efda0b4b-2ff9-4df3-a189-9e66ece49f16"),
-                            Category = 9,
-                            Description = "El Samsung Galaxy A14 de 128GB y 4GB de RAM en color negro es el celular perfecto para aquellos que buscan un dispositivo potente y elegante. Con su pantalla Full HD+ de 6.6 pulgadas, disfrutarás de imágenes nítidas y colores vibrantes en todo momento. Gracias a su sistema operativo Android, tendrás acceso a miles de aplicaciones y juegos para sacar el máximo provecho a tu smartphone. Además, su capacidad de almacenamiento de 128GB te permitirá guardar todas tus fotos, videos y aplicaciones sin preocuparte por el espacio. La memoria RAM de 4GB garantiza un rendimiento fluido y rápido, incluso al utilizar varias aplicaciones al mismo tiempo. Con su batería de 5000 mAh, podrás disfrutar de largas horas de uso sin preocuparte por cargarlo constantemente. Y aunque no es Dual SIM, su conectividad 4G/LTE te asegura una navegación rápida y estable en todo momento. No esperes más y lleva contigo el Samsung Galaxy A14, el celular que combina estilo, potencia y funcionalidad en un solo dispositivo.",
-                            Discount = 25,
-                            ImageUrl = "https://http2.mlstatic.com/D_NQ_NP_823777-MLU54974953656_042023-O.webp",
-                            Name = "Samsung Galaxy A14 128gb 4gb Ram Negro",
-                            Price = 239999m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("1818daae-b1ad-4abc-8abd-726bffb20ea0"),
-                            Category = 10,
-                            Description = "Sus medidas, como muestran las imágenes son 2,45mts de Altura x 3 mts de Diámetro de cobertura en forma octogonal para permitir mas área de Sombra total. ATENCIÓN: El artículo viene SIN LA BASE. Características: Color: Crudo, Material Aluminio 19%, Acero 22%, Poliéster 48%, Plástico 11%. Peso Neto 5,1 kg. Con Inclinación y Manivela para Apertura. Diámetro del caño de la base: 38mm. Medidas caja: 155x13,7x13,7",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/370037-1200-1200?v=638404197434000000&width=1200&height=1200&aspect=true",
-                            Name = "Sombrilla De Aluminio 3.5 Mts",
-                            Price = 135996m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("25f7bb63-c1bd-47df-a636-9e6138d4f891"),
-                            Category = 10,
-                            Description = "Con su diseño ergonómico y su construcción duradera, la reposera Outzen Asis te brinda la combinación perfecta de estilo y funcionalidad. Ya sea en la playa, en el jardín o en cualquier otro lugar al aire libre, esta reposera te invita a relajarte y disfrutar del momento con total comodidad.\r\n\r\n",
-                            Discount = 10,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/314562-1200-1200?v=637804601200000000&width=1200&height=1200&aspect=true",
-                            Name = "Silla de playa Outzen New Asis negro 110x65x165 cm",
-                            Price = 43464m
-                        },
-                        new
-                        {
-                            ProductId = new Guid("9791d616-5db1-4a59-b268-528bf38e92d3"),
-                            Category = 10,
-                            Description = "Accesible como ninguno, diseño único y funcional. Disfruta del sabor aumado de un clásico a menor precio con la mejor calidad.",
+                            ProductId = new Guid("76ebf61b-7543-4cfd-a570-290b00dd50e4"),
+                            Category = 2,
+                            Description = "Consola de última generación con gráficos en 4K, SSD ultra rápido, control DualSense y compatibilidad con juegos de PS4.",
                             Discount = 5,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/368266-1200-1200?v=638386939442200000&width=1200&height=1200&aspect=true",
-                            Name = "Parrilla Chulengo a Leña Tromen",
-                            Price = 308792m
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS_zCNBX8XjIOhO1odOQXnZKgvSBsL8x3m9uxc0tusdkgw3dsS0krgtsPjkSB00LBSxPZu1dcauTWc4ZO590-OMQJnNPBiC-ov39wJp7Yz5ixT7Eu0HoXV6&usqp=CAE",
+                            Name = "Consola PlayStation 5",
+                            Price = 699999m
                         },
                         new
                         {
-                            ProductId = new Guid("4a66a55c-7e35-4fa5-97fa-7a0f33a2ed5a"),
-                            Category = 10,
-                            Description = "Prepárate para disfrutar del verano con la Pileta de Lona Pelopincho 1055, con una generosa capacidad de 4.500 litros y dimensiones de 75x200x300 cm. Esta espaciosa pileta ofrece diversión para toda la familia en la comodidad de tu propio patio trasero.",
+                            ProductId = new Guid("f1bd874f-4fc8-44d9-bff9-50f6cddc23a3"),
+                            Category = 2,
+                            Description = "Monitor gaming curvo de 49 pulgadas, resolución Dual QHD (5120x1440), tasa de refresco de 240 Hz y tecnología Quantum Dot.",
                             Discount = 15,
-                            ImageUrl = "https://arcencohogar.vtexassets.com/arquivos/ids/307538-1200-1200?v=637665774493470000&width=1200&height=1200&aspect=true",
-                            Name = "Pileta Lona Pelopincho 1055 4.500L 75X200X300 Cm 26,4Kg",
-                            Price = 178991m
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQFRRNd74eCI_FcSpOQ33Q0B2NjYsEfCbj92xXSxooati04Di_eJnhR9-HOdKqvfkCkTeMBiRxSVQjKhXnxQ_qXGUtr3hJfNWvgctX7KqVKYc8z2XvzvJwzFg&usqp=CAE",
+                            Name = "Monitor Curvo Samsung Odyssey G9",
+                            Price = 2599999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("0f5ba235-5ea3-4bf4-a042-22ece88128fb"),
+                            Category = 3,
+                            Description = "Vestido largo de noche con encaje y detalles bordados, ideal para eventos formales.",
+                            Discount = 20,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRyd53rEy27sYraa0s7ieQuUdokjcWii6xsaDy6ZxIimYVBEVhtJqS4f8ND__YYk04NfprorgGZ4b54HHSHVVHmDY8DeFmg9kfQZFzZLIVg5F_18Jy4EVl2&usqp=CAE",
+                            Name = "Vestido de Noche Elegante",
+                            Price = 89999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("48b153b7-7c08-4cdc-8f0b-1463a516db8e"),
+                            Category = 3,
+                            Description = "Bolso de mano elegante fabricado en cuero genuino con compartimentos internos y correa ajustable.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRzG6a3hup9Hr0Dc0l8AIlWdqv9Me8SAYq8JGlLznBm8Sq2FYzlffiN5A2aL71zhkItqqj5RV8MNlSFZqgmrnI_WsFfsNbhUjOLkPgWZSD8ExRxl5mf1ZxO&usqp=CAE",
+                            Name = "Bolso de Cuero Genuino",
+                            Price = 149999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("1a09579e-699c-43a0-b8d2-5f0973d7b89c"),
+                            Category = 3,
+                            Description = "Reloj inteligente con pantalla táctil AMOLED, monitorización de salud y seguimiento de actividad física.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSAinXkzzhkGSJUZEq6RU6rU9wiHOj5cwT-BemDcqUHkZK9V07SPOgWp4OGqeICP2bYZopvqt8DUZ6qwZWQm663NMT64UpwF2k_QaVQnh-UPa49XJPNr2kIfQ&usqp=CAE",
+                            Name = "Reloj de Pulsera Fossil Gen 6",
+                            Price = 349999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("437686b0-7481-4bac-afd0-6d5634eb261e"),
+                            Category = 3,
+                            Description = "Zapatos de cuero clásicos ideales para uso diario y ocasiones formales, diseño cómodo y duradero.",
+                            Discount = 15,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTS3foCp5SlYK36hyjerTtBdw4pvT2mOz06laSuSiq6-h7hKH3ke7KtVbSnE3W9koQYufrG1jNprhO7Mrcx2K3mRy5VGXqOPDGaf92qTnEatdbI9wDbOZoc&usqp=CAE",
+                            Name = "Zapatos de Vestir Clásicos",
+                            Price = 119999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("b1e78f5f-cb85-4b7f-9e81-7f7a648d0b85"),
+                            Category = 4,
+                            Description = "Set de muebles modulares para sala de estar, incluye sofá, mesa de centro y estantes.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQk9uD1VT7W-Ve4ecjwoY5qUJRM2Sgyozg-0SYWtm43CUWI58PLf9U-ADKm_DHielQ9zqr6PFsMazIOFyQrsAXtZ0ZBNd8E9L68W8jhpFk-&usqp=CAE",
+                            Name = "Set de Muebles de Sala Modulares",
+                            Price = 249999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("82678766-e12b-49dc-b60c-ac11df9c4372"),
+                            Category = 4,
+                            Description = "Lámpara de techo LED con diseño moderno, iluminación ajustable y control remoto.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRBtGaNJn94HnEqFuXWDPw0U1OCb4-CAmV4U38x0922x3iQv8g_yzFNfZefJehExLk9G6zlTlYuTH4k37l0uvHxm5-UwytOQPJdMILIBixuWIhThQnwomtA&usqp=CAE",
+                            Name = "Lámpara de Techo LED Moderna",
+                            Price = 89999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("878d866f-5530-4e82-a05a-a2bba39e6e33"),
+                            Category = 4,
+                            Description = "Juego de sábanas de 600 hilos de algodón egipcio, suaves y resistentes, incluye sábana plana, ajustable y fundas.",
+                            Discount = 8,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTLnuaC_mjKtepU9CwRsJIkMUQD6QKuMNOqg82zT7TUT08nmAuAS7qb0yQsZSUbjFIOMxyo1RkeQmkvZMPlZLpc236mWitN&usqp=CAE",
+                            Name = "Juego de Sábanas de Algodón Egipcio",
+                            Price = 119999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("16d2a07c-4aa6-4b42-a4f3-a36c63f97149"),
+                            Category = 4,
+                            Description = "Espejo decorativo con marco de madera tallada a mano, ideal para espacios de estilo clásico y elegante.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT82RXmIwA_9cjxcRJgmG2QyLd4sotsAol1BrhdfR_aDza9fYnBZUZ57NN8OGq29GmH8uY8H3J0zyK30ZvFuZ5k16ICbuaWxgAsYndmtUOzmUej7Wu4cmxi3w&usqp=CAE",
+                            Name = "Espejo Decorativo con Marco de Madera",
+                            Price = 69999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("8a6dac6e-9b7b-494f-bd70-55f53f207551"),
+                            Category = 5,
+                            Description = "Kit completo de maquillaje profesional con paletas de sombras, labiales, bases y brochas de alta calidad.",
+                            Discount = 15,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQQaGJjKviM7Ix4i9wmFiBptdH6mDaiHWVuXGAezYydWvNKnGYN8-jfhx5EyZpIWH-aZSwfpgZNk4g7d_Ijr5KkM6N4eKUmAd05lC7xZ8Y&usqp=CAE",
+                            Name = "Kit de Maquillaje Profesional",
+                            Price = 149999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("e561be5c-130f-4276-a37f-89f7524bc182"),
+                            Category = 5,
+                            Description = "Cepillo eléctrico dental con tecnología sónica para una limpieza profunda y efectiva, incluye varios modos de cepillado.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQZsrFjq8-ZGuWFMljBqUwFTaWUeqqnWOffmtXr5gLFpKDAPiAkKrj67wUjkpLrVgCwiVH3l9ElvRSk-lO-4_fuZovhkiMGkTrAVWjG9H0v3YD1cgK_QsQAa3Q&usqp=CAE",
+                            Name = "Cepillo Eléctrico Dental Sonicare",
+                            Price = 79999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("90019186-740e-4398-9916-a738983131b1"),
+                            Category = 5,
+                            Description = "Set de perfumes variados para hombre y mujer, incluye fragancias de marcas reconocidas.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSUilTJbRGExoWS-vXrgwTVPHZK_gTtyTX6Nu9kc7RG7uXiY_iOEGoOxxnqOK2rbSweoMvR9uK2PL9MY73U9Y1ouAMlUtRWO7oXwOZXkjdUahe33JytR-3E1wdI&usqp=CAE",
+                            Name = "Set de Perfumes Variados",
+                            Price = 299999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("fb4e928c-9b7e-48ac-98e6-2926574a7550"),
+                            Category = 5,
+                            Description = "Mascarilla facial de colágeno para hidratar y revitalizar la piel, ideal para todo tipo de piel.",
+                            Discount = 20,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTuwBJcj7gHfHd0NAb38Cny1Stq-RUSI8cdt16G0s96iwbyzvSAuAsIpXTR9BeVIvKEfy6BYlmRW33_kYIkL-Ol2npovN6rV3ot5iMWinkijy9_YqhMjkh-Ug&usqp=CAE",
+                            Name = "Mascarilla Facial de Colágeno",
+                            Price = 19999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("34686da4-6c82-4ba3-9c31-ee183a807d5d"),
+                            Category = 6,
+                            Description = "Bicicleta de montaña ligera y resistente, cuadro de aluminio, frenos de disco hidráulicos y cambios Shimano.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR5FzXwYigKlk2I3thb1_YtDN-9CIhxsoYxTm4Y0jpNJoBDaTWt48GgoS_u4yYL963-SOseMqKcSpvQO8sJL1O2OabXzoz8q71kDalp3ktvaoyucBYwG8c4&usqp=CAE",
+                            Name = "Bicicleta de Montaña Trek",
+                            Price = 699999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("6972577d-9864-4747-b055-6f743152a49e"),
+                            Category = 6,
+                            Description = "Pelota de fútbol profesional con diseño aerodinámico, ideal para partidos y entrenamientos intensivos.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRC_Yj3UbmHWb1cw6KbXosRPDLOehaY8q3WCvMFLovsEqjFaKgIWO0kNt2BwbKf4PbtSyijiOu7IhYUJO4Y6mrqqxhfKr4gD6Mi9Fai0qZfEwVaCoZBB_Q4&usqp=CAE",
+                            Name = "Pelota de Fútbol Profesional Adidas",
+                            Price = 79999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("dc5b686f-50bd-49a8-a633-4c57f2c425ac"),
+                            Category = 6,
+                            Description = "Raqueta de tenis de alta gama, diseño ligero y ergonómico, ideal para jugadores avanzados.",
+                            Discount = 8,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTzrAH75B_-BkzkxMZF3nrQjqqmH0RV2v_Q-99UYUu-hgy1UIIai2elImG_5jw04HmlR-yDhA0va5Oh7KU8-yijhuQ5oGgujn7TElIRNuBCoYvs9muu9Nvq&usqp=CAE",
+                            Name = "Raqueta de Tenis Wilson Pro Staff",
+                            Price = 249999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("4f738766-1988-472c-a834-8418685bfd04"),
+                            Category = 6,
+                            Description = "Patineta eléctrica con tecnología de autoequilibrio, velocidad ajustable y autonomía de hasta 15 km.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSRZ0eRUcN2jqBkAxDNUXnfjvRPtxuiog3wuBRm-DxiAXC-SIPyDsSXSJIsTV7naj4xNAzLgLNA0ZsuVfyLMzovatdRZaaLiDDEu0LignXGsMa0RXE_bgkE&usqp=CAE",
+                            Name = "Patineta Eléctrica Hoverboard",
+                            Price = 349999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("8969245a-fb86-437a-9431-2c2c5adba70a"),
+                            Category = 7,
+                            Description = "Set de construcción LEGO Technic con más de 1500 piezas, incluye instrucciones para construir varios modelos de vehículos.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcScoyPHobmhmIp5mjYSgG84PDoCsJsx2vulaBH4YF9wiBux5Fl4uu2UKIiyssyahUfvtB_hwZydoo0GNEiiDs4RSu8ITS7GMi9XI4ZH-bKqjlXI9nsbblCe&usqp=CAE",
+                            Name = "Set de Construcción LEGO Technic",
+                            Price = 79999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("e59a34d5-c217-4713-9194-ac77baf48989"),
+                            Category = 7,
+                            Description = "Muñeca Barbie con casa de ensueño, incluye accesorios como muebles y ropa para la muñeca.",
+                            Discount = 8,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSBnw46A4ymOzK5aVghSFeea4r1dW1jHf1QOAjtBOQ6DeePlJbuFP0lRkgsPbVgGn_mWscgaE8xhcHo0emExkaARt0XiezNeFAI3KXQPEXU0gIkezDygnc1&usqp=CAE",
+                            Name = "Muñeca Barbie Dreamhouse",
+                            Price = 149999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("a5a43d3b-8f82-49f4-83e4-d5ba2e291fab"),
+                            Category = 7,
+                            Description = "Juego de mesa Monopoly edición especial con temática de ciudades famosas del mundo, ideal para toda la familia.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSlRADA0enIzx3OKJuRYmzciBB5LyMbhRV-QToOhdMEeP5vu3b927IL9EtbBvm7j1NV1-jaYyPxbcbAclB3NuoaEYlTUFjxAXJXrIJRWip0q7HfK2RYgbnf&usqp=CAE",
+                            Name = "Juego de Mesa Monopoly Edición Especial",
+                            Price = 89999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("723efde1-fe5d-4d59-a942-9f6d1ebfe1c2"),
+                            Category = 7,
+                            Description = "Pista de carreras Hot Wheels con looping y lanzador de coches, emocionantes carreras para niños y niñas.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTkDdm8ofVxeHEZg1GdFnwqJNkd0k7kQhnUIiW0MVUraZBBWVEv195ttrZMUi9J7STpj73wJKz20TX8TtFDkdVzAXsFNXR-WU1UhHvlf1wb716l776DnQwu&usqp=CAE",
+                            Name = "Pista de Carreras Hot Wheels",
+                            Price = 59999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("ed465709-5395-4dd5-8a6c-479501729324"),
+                            Category = 8,
+                            Description = "Caja de vinos varietales seleccionados, incluye diferentes cepas y marcas reconocidas.",
+                            Discount = 15,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRaULa9aL3suKEjZHcfF15L4YT38sLJuGRf692HUZLwpPPB9CT73Jb3IsJ0CDSxfhg1er4HcYIEbxR_hW09Ag-d2m6xQJmvuieGugdT_4n49RkmnXxfHQum&usqp=CAE",
+                            Name = "Caja de Vinos Varietales",
+                            Price = 99999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("6d29f1e5-c4de-46d1-ad22-38f013f52951"),
+                            Category = 8,
+                            Description = "Caja de chocolates artesanales variados, perfectos para regalo o disfrute personal.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSkLOlVkRm_7EkAxE19fIIEkxbjUFZ8cp-gsAGGJWr2YI90Sw4tkTOyOoYomThiSjZsJ9k2YtMjIVaAm_0rvt26Sa8UayxUy7KpCqnur0U&usqp=CAE",
+                            Name = "Caja de Chocolates Artesanales",
+                            Price = 49999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("699e2cee-06d1-4d37-9da2-c49eec6daf23"),
+                            Category = 8,
+                            Description = "Pack de cervezas artesanales de diferentes estilos y sabores, ideal para aficionados a la cerveza.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRxThpx-03Ko-i1ZLbjSo_c5_hoA0E7qlbELoA4jCTb0D3LPHOfWXwQTUzhF4Vm4wFPDpBpBMGVn7kxCZbq8EIcJQn_1GEGekKWA9Pv6Gc&usqp=CAE",
+                            Name = "Pack de Cervezas Artesanales",
+                            Price = 69999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("a819291a-5b2c-4617-828e-81c5345be69b"),
+                            Category = 8,
+                            Description = "Caja de tés gourmet con variedad de infusiones y sabores exóticos, ideal para momentos de relax.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTsGbPeustN-h1tglmXjbyxJwo9atcnhZ1oWk98kX_BDv79l2bGJZxxJ1aw3MFYmgIyjpENsWmVzraIPF7OPkzCDyf1BSjvZSCw_RBbIZ9ubggodOdVzsP-pw&usqp=CAE",
+                            Name = "Caja de Tés Gourmet",
+                            Price = 34999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("d717c228-c00b-4272-a01a-11f625a189f2"),
+                            Category = 9,
+                            Description = "Colección completa de libros de Harry Potter, incluye todos los libros de la saga escrita por J.K. Rowling.",
+                            Discount = 20,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQY6AhaXhwNP2Doj3pV4bKW87gMCegyTI5efNROST6WodZa1Z0MMlQiNuk_N4T5BpK6-teJs8asTb9rdRzB1TjsGbQMDV7W1hWjbZ0x1UP2HUBK50YhLl8f&usqp=CAE",
+                            Name = "Colección Completa Harry Potter",
+                            Price = 199999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("d28d83f3-c01a-4315-b738-64c4ca0decf0"),
+                            Category = 9,
+                            Description = "Enciclopedia ilustrada de ciencias con información detallada y imágenes a todo color, ideal para estudiantes y curiosos.",
+                            Discount = 8,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTJb12if7DCZK2_ebm14dtyGUKkf7XxgmQljk160OEi_a_L-XP_LBg-h9sMLaAh51UjKM8vSGUFkfZ76AjmVsfi8ZdqOrti6NzQFLy3EWw&usqp=CAE",
+                            Name = "Enciclopedia Ilustrada de Ciencias",
+                            Price = 89999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("489cebf7-244a-4b2c-9a83-c1deee47f599"),
+                            Category = 9,
+                            Description = "Guía completo de fotografía en formato libro, desde principiantes hasta técnicas avanzadas de composición y edición.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSSFkQuWBxhZKlMqHJd2t1tONI6j-eExxQ4BS00JEsUGypVByDutUw42mL6e8wcMH-6xubvLu4vI6uleIzu5kK5V76bqa92t7pTKkqWfFMvKp3gnWTxstNIVw&usqp=CAE",
+                            Name = "Guía Completo de Fotografía",
+                            Price = 64999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("cca31237-ed31-4d48-891a-e476be62a61b"),
+                            Category = 9,
+                            Description = "Diccionario completo de la lengua española con definiciones actualizadas y ejemplos de uso.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRy-bX6YBY0IMEiE-qTv562WsRfROuEcVlHOdNg4Ijxw14Frvz_a__4Y6xeQera_xxT7_A3Z-4LLJHXD9iL2nTSbFARyhabDFmpGFVYKdBuCrC350TrTsgC&usqp=CAE",
+                            Name = "Diccionario de Lengua Española",
+                            Price = 29999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("42b2d88a-57b7-49c4-9179-c71023282306"),
+                            Category = 10,
+                            Description = "Set completo de herramientas de jardinería, incluye palas, rastrillos, tijeras de podar y guantes protectores.",
+                            Discount = 10,
+                            ImageUrl = "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQin4JRIPkEPsIwbCMEN8ncsMlFDWirEpHd2db_NcPhHBNfeWlIBD8Ocf2ZXMt5fQlrgjFWeGLbXpIXCFlvLOSzUbPGpGs8JyjFTD7qRjGFk4FysdZBKAYR&usqp=CAE",
+                            Name = "Set de Herramientas de Jardinería",
+                            Price = 79999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("2ada394c-3a37-4543-bc4a-e152b62c8535"),
+                            Category = 10,
+                            Description = "Mesa de trabajo plegable para bricolaje, superficie resistente y ajustable, fácil de transportar y almacenar.",
+                            Discount = 8,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTwCwcb9QWfOGKeSChOhBYEMYsq2gh8C4lOH511rM0FQXaV6Y1X3PehT9S-PqrVPE09I-IPMZNgKhmDsuCbvf4rurGY6s9cPWE07_Ing6TvLMg8EDdTk2f4&usqp=CAE",
+                            Name = "Mesa de Trabajo Plegable",
+                            Price = 49999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("352a55c4-1942-4bc1-b972-601707a54d18"),
+                            Category = 10,
+                            Description = "Kit de iluminación solar para jardín, incluye lámparas LED, paneles solares y baterías recargables.",
+                            Discount = 5,
+                            ImageUrl = "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPkMHrIbwKIyl_E5iB30B22OqVvkp5u39OCmp5YTCkqZJJXnLUekLgesCcYz8VfS0gkLc4FXSxSfbvNe9UAuv79OZ_ud2KFEH8Wt6Xlp5hraCUTqoPmykDNw&usqp=CAE",
+                            Name = "Set X10 de Iluminación Solar para Jardín",
+                            Price = 129999m
+                        },
+                        new
+                        {
+                            ProductId = new Guid("b52fc3a6-70cd-413a-a383-fb535dd23d25"),
+                            Category = 10,
+                            Description = "Invernadero portátil para cultivo de plantas, estructura resistente y cubierta transparente para maximizar la luz solar.",
+                            Discount = 12,
+                            ImageUrl = "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRdSRPrD53aV_8AogJf0A4fM__7kbenu3frR26-Qy3P8ctE1Np2tUF9jdsqvXiDTtPRgHaraCQgVF9V4dCF6Yp9yprIRQlq-5W4E2B2Ams--yFH9_VDwa1G&usqp=CAE",
+                            Name = "Invernadero Portátil",
+                            Price = 89999m
                         });
                 });
 

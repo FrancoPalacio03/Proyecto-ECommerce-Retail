@@ -1,16 +1,11 @@
 ﻿using Application.Exceptions;
+using Application.Interfaces.category;
 using Application.Interfaces.IMappers;
 using Application.Interfaces.product;
-using Application.Mappers;
+using Application.Interfaces.saleProduct;
 using Application.Request;
 using Application.Responce;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.UseCases
 {
@@ -20,30 +15,62 @@ namespace Application.UseCases
         private readonly IProductQuery _productQuery;
         private readonly IProductMapper _productMapper;
         private readonly ICategoryMapper _categoryMapper;
-        public ProductService(IProductCommand productCommand, IProductQuery query, IProductMapper productMapper, ICategoryMapper categoryMapper)
+        private readonly ICategoryService _categoryService;
+        private readonly ISaleProductService _saleProductService;
+        public ProductService(IProductCommand productCommand, IProductQuery query, IProductMapper productMapper, ICategoryMapper categoryMapper, ICategoryService categoryService, ISaleProductService saleProductService)
         {
             _productCommand = productCommand;
             _productQuery = query;
             _productMapper = productMapper;
             _categoryMapper = categoryMapper;
+            _categoryService = categoryService;
+            _saleProductService = saleProductService;
         }
 
         public async Task<ProductResponse> CreateProduct(ProductRequest request)
         {
-            var product = new Product
+            try
             {
-                Name = request.Name,
-                Description = request.Description,
-                Price = request.Price,
-                Category = request.Category,
-                Discount = request.Discount,
-                ImageUrl = request.imageUrl
-            };
 
-            var insertedProduct = await _productCommand.InsertProduct(product);
-            var productResponse = await _productMapper.GetProductResponse(insertedProduct);
+                if (string.IsNullOrEmpty(request.Name) || request.Discount < 0 || request.Price < 0)
+                {
+                    throw new BadRequest("Bad Request");
+                }
 
-            return productResponse;
+                if (await _productQuery.GetProductByName(request.Name) != null)
+                {
+                    throw new Conflict("Product with this name already exists");
+                }
+
+                await CategoryCheck(request);
+
+
+                var product = new Product
+                {
+                    Name = request.Name,
+                    Description = request.Description,
+                    Price = request.Price,
+                    Category = request.Category,
+                    Discount = request.Discount,
+                    ImageUrl = request.imageUrl
+                };
+
+                var insertedProduct = await _productCommand.InsertProduct(product);
+
+                var productResponse = await _productMapper.GetProductResponse(insertedProduct);
+
+                return productResponse;
+            }
+            catch (Conflict ex)
+            {
+                throw new Conflict(ex.Message);
+            }
+            catch (BadRequest ex)
+            {
+                throw new BadRequest(ex.Message);
+            }
+
+
         }
 
         public async Task<List<ProductGetResponse>> GetAll(string? name, int? limit, int? offset, int[]? categories)
@@ -56,17 +83,17 @@ namespace Application.UseCases
         {
             try
             {
-                if (!await CheckProductId(productId))
+                if (await CheckProductId(productId))
                 {
-                    throw new ExceptionNotFound("No Existe ese ID");
+                    throw new NotFoundException("ID error");
                 }
                 var product = await _productQuery.GetProduct(productId);
                 var productResponse = await _productMapper.GetProductResponse(product);
                 return productResponse;
             }
-            catch (ExceptionNotFound ex)
+            catch (NotFoundException ex)
             {
-                throw new ExceptionNotFound(ex.Message);
+                throw new NotFoundException(ex.Message);
             }
         }
 
@@ -74,10 +101,25 @@ namespace Application.UseCases
         {
             try
             {
-                if (!await CheckProductId(id))
+                var existingProduct = await _productQuery.GetProduct(id);
+                if (existingProduct == null)
                 {
-                    throw new ExceptionNotFound("No Existe ese ID");
+                    throw new NotFoundException("Product not exist");
                 }
+
+                if (string.IsNullOrEmpty(request.Name) || request.Discount < 0 || request.Price < 0)
+                {
+                    throw new BadRequest("Bad Request");
+                }
+
+                var productWithSameName = await _productQuery.GetProductByName(request.Name);
+                if (productWithSameName != null && productWithSameName.ProductId != id)
+                {
+                    throw new Conflict("Product with this name already exists");
+                }
+
+                await CategoryCheck(request);
+
                 var product = new Product
                 {
                     Name = request.Name,
@@ -92,36 +134,71 @@ namespace Application.UseCases
                 return productResponse;
 
             }
-            catch (ExceptionNotFound ex)
+            catch (NotFoundException ex)
             {
-                throw new ExceptionNotFound(ex.Message);
+                throw new NotFoundException(ex.Message);
+            }
+            catch (BadRequest ex)
+            {
+                throw new BadRequest(ex.Message);
+            }
+            catch (Conflict ex)
+            {
+                throw new Conflict(ex.Message);
             }
         }
+
 
         public async Task<ProductResponse> DeleteProduct(Guid productId)
         {
             try
             {
-                if (!await CheckProductId(productId))
+
+                var existingProduct = await _productQuery.GetProduct(productId);
+                if (existingProduct == null)
                 {
-                    throw new ExceptionNotFound("No Existe ese ID");
+                    throw new NotFoundException("Product not found");
                 }
-                var product = await _productQuery.GetProduct(productId);
-                await _productCommand.RemoveProduct(product);
-                var productResponse = await _productMapper.GetProductResponse(product);
+
+                if (await _saleProductService.IsProductInAnySale(productId))
+                {
+                    throw new Conflict("Product cannot be deleted as it is part of an existing sale.");
+                }
+
+                await _productCommand.RemoveProduct(existingProduct);
+
+                var productResponse = await _productMapper.GetProductResponse(existingProduct);
                 return productResponse;
             }
-            catch (ExceptionNotFound ex) 
+            catch (NotFoundException ex)
             {
-                throw new ExceptionNotFound(ex.Message);
+                throw new NotFoundException(ex.Message);
+            }
+            catch (Conflict ex)
+            {
+                throw new Conflict(ex.Message);
             }
 
         }
 
-        private async Task<bool> CheckProductId(Guid id) 
+        private async Task<bool> CheckProductId(Guid id)
         {
-            return (await _productQuery.GetProduct(id) != null);
-        
+            return await _productQuery.GetProduct(id) == null;
         }
+
+        private async Task CategoryCheck(ProductRequest request)
+        {
+            try
+            {
+                Category category = await _categoryService.GetById(request.Category);
+            }
+            catch (NotFoundException ex)
+            {
+                throw new BadRequest(ex.Message);
+            }
+
+        }
+
+
     }
 }

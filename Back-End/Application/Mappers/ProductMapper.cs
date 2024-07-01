@@ -1,13 +1,6 @@
-﻿using Application.Interfaces.category;
-using Application.Interfaces.IMappers;
+﻿using Application.Interfaces.IMappers;
 using Application.Responce;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Mappers
 {
@@ -15,7 +8,7 @@ namespace Application.Mappers
     {
         private readonly ICategoryMapper _categoryMapper;
 
-        public ProductMapper(ICategoryMapper categoryMapper) 
+        public ProductMapper(ICategoryMapper categoryMapper)
         {
             _categoryMapper = categoryMapper;
         }
@@ -29,7 +22,7 @@ namespace Application.Mappers
                 Price = product.Price,
                 Discount = product.Discount,
                 imageUrl = product.ImageUrl,
-                categoryResponse = await _categoryMapper.GetCategoryResponse(product.category),
+                category = await _categoryMapper.GetCategoryResponse(product.category),
             };
             return await Task.FromResult(response);
         }

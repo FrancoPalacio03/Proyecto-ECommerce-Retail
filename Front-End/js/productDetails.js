@@ -1,7 +1,6 @@
 function showProductDetails(product) {
-  const url = `https://localhost:7021/api/ProductControler/${product.id}`;
   document.getElementById('product-quantity').value = 1;
-  fetch(url)
+  fetch(`${productUrl}${product.id}`)
     .then(response => response.json())
     .then(data => {
       const formattedPrice = new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(data.price);

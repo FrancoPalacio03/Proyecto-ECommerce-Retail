@@ -71,8 +71,8 @@
       <div id="cards-container" class="cards-container">
       </div>
 
-      <div class="loader" id="loader" style="display: none"></div>
-      <div id="no-results" class="text-center" style="display: none">
+      <div class="loader" id="loader"></div>
+      <div id="no-results" class="text-center">
         <p>No products with this name</p>
       </div>
 
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Categories -->
-    <aside class="container">
+    <aside class="container" id="categories">
       <h2 class="roboto-light">Categories</h2>
       <ul class="list-group">
         <li class="list-group-item">
@@ -99,55 +99,55 @@
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="2" id="category2" />
-            <label class="form-check-label stretched-link" for="category2">Baño</label>
+            <label class="form-check-label stretched-link" for="category2">Tecnología y Electrónica</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="3" id="category3" />
-            <label class="form-check-label stretched-link" for="category3">Herramientas</label>
+            <label class="form-check-label stretched-link" for="category3">Moda y Accesorios</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="4" id="category4" />
-            <label class="form-check-label stretched-link" for="category4">Automotor</label>
+            <label class="form-check-label stretched-link" for="category4">Hogar y Decoración</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="5" id="category5" />
-            <label class="form-check-label stretched-link" for="category5">Electricidad</label>
+            <label class="form-check-label stretched-link" for="category5">Salud y Belleza</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="6" id="category6" />
-            <label class="form-check-label stretched-link" for="category6">Plomeria</label>
+            <label class="form-check-label stretched-link" for="category6">Deportes y Ocio</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="7" id="category7" />
-            <label class="form-check-label stretched-link" for="category7">Cocina</label>
+            <label class="form-check-label stretched-link" for="category7">Juguetes y Juegos</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="8" id="category8" />
-            <label class="form-check-label stretched-link" for="category8">Muebleria</label>
+            <label class="form-check-label stretched-link" for="category8">Alimentos y Bebidas</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="9" id="category9" />
-            <label class="form-check-label stretched-link" for="category9">Tecnologia</label>
+            <label class="form-check-label stretched-link" for="category9">Libros y Material Educativo</label>
           </div>
         </li>
         <li class="list-group-item">
           <div class="form-check form-switch">
             <input class="form-check-input me-1 category-checkbox" type="checkbox" value="10" id="category10" />
-            <label class="form-check-label stretched-link" for="category10">Jardin</label>
+            <label class="form-check-label stretched-link" for="category10">Jardinería y Bricolaje</label>
           </div>
         </li>
       </ul>
@@ -212,8 +212,7 @@
             <div class="toast-container position-fixed bottom-0 end-0 p-5">
               <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
-                  <img src="https://i.postimg.cc/Kv9W8zj4/spy-x-family-surprised-anya-forger-sticker.png"
-                    style="width: 35px; height: 35px" class="rounded me-2" alt="..." />
+                  <img class="notification-image" class="rounded me-2" src="https://i.postimg.cc/Kv9W8zj4/spy-x-family-surprised-anya-forger-sticker.png" alt="..."/>
                   <strong class="me-auto">System</strong>
                   <small>now</small>
                   <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -239,7 +238,7 @@
           <h5 class="modal-title" id="cartDetailsModalLabel">Cart Details</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="container cartModal">
+
           <div class="row">
             <div class="col-lg-12">
               <div class="card">
@@ -250,11 +249,11 @@
                       <table class="table align-middle table-nowrap table-centered mb-0">
                         <thead>
                           <tr>
-                            <th style="width: 70px">No.</th>
+                            <th>No.</th>
                             <th>Item</th>
                             <th>Price</th>
                             <th>Quantity</th>
-                            <th class="text-end" style="width: 120px">
+                            <th class="text-end">
                               Total
                             </th>
                           </tr>
@@ -312,7 +311,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -374,13 +372,13 @@
             <div class="col-md-4 mb-5">
               <h5 class="text-primary mb-4">Comentarios</h5>
               <form action="">
-                <div class="form-group" style="padding-bottom: 10px">
+                <div class="form-group comments">
                   <input type="text" class="form-control border-0" placeholder="Nombre" name="" id="" />
                 </div>
-                <div class="form-group" style="padding-bottom: 10px">
+                <div class="form-group comments">
                   <input type="email" class="form-control border-0" placeholder="Email" name="" id="" />
                 </div>
-                <div class="form-group" style="padding-bottom: 10px">
+                <div class="form-group comments">
                   <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Comentario"
                     rows="3"></textarea>
                 </div>

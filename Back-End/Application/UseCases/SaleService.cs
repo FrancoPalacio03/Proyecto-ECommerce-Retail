@@ -6,11 +6,6 @@ using Application.Interfaces.saleProduct;
 using Application.Request;
 using Application.Responce;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.UseCases
 {
@@ -32,56 +27,95 @@ namespace Application.UseCases
         }
         public async Task<SaleResponse> CreateSale(SaleRequest saleRequest)
         {
-            int totalQuantity = 0;
-
-            Dictionary<ProductResponse, int> productsWithQuantity = await ObtainProducts(saleRequest.Products);
-            Sale saleCreated = await ReturnSale(productsWithQuantity);
-
-            List<SaleProduct> saleProducts = await _saleProductServices.ReturnSaleProducts(saleRequest.Products, saleCreated);
-            saleCreated.SaleProducts = saleProducts;
-
-
-            if (saleRequest.TotalPayed == saleCreated.TotalPay)
+            try
             {
-                foreach (KeyValuePair<ProductResponse, int> product in productsWithQuantity)
+                if (saleRequest.TotalPayed <= 0)
                 {
-                    totalQuantity += product.Value;
+                    throw new BadRequest("Bad Request");
                 }
-                var createdSale = await _saleCommand.InsertSale(saleCreated);
-            }
-            else
-            {
-                throw new Exception("Total Pay calculate error");
-            }
 
-            return await _saleMapper.GetSaleResponse(saleCreated, totalQuantity); ;
+                int totalQuantity = 0;
+
+                if (saleRequest.Products == null)
+                {
+                    throw new BadRequest("Bad Request");
+                }
+
+
+                Dictionary<ProductResponse, int> productsWithQuantity = await ObtainProducts(saleRequest.Products);
+
+
+
+                Sale saleCreated = await ReturnSale(productsWithQuantity);
+
+                List<SaleProduct> saleProducts = await _saleProductServices.ReturnSaleProducts(productsWithQuantity, saleCreated);
+                saleCreated.SaleProducts = saleProducts;
+
+
+                if (saleRequest.TotalPayed == saleCreated.TotalPay)
+                {
+                    foreach (KeyValuePair<ProductResponse, int> product in productsWithQuantity)
+                    {
+                        if (product.Value <= 0) { throw new BadRequest("Total Pay calculate error"); }
+                        totalQuantity += product.Value;
+                    }
+                    var createdSale = await _saleCommand.InsertSale(saleCreated);
+                }
+                else
+                {
+                    throw new BadRequest("Total Pay calculate error");
+                }
+
+                return await _saleMapper.GetSaleResponse(saleCreated, totalQuantity); ;
+
+            }
+            catch (BadRequest ex)
+            {
+                throw new BadRequest(ex.Message);
+            }
         }
 
         public async Task<List<SaleGetResponse>> GetAll(DateTime? from, DateTime? to)
         {
-            List<Sale> sale = await _saleQuery.GetSaleList(from, to);
-            return await _saleMapper.GetSaleGetResponse(sale);
+            try
+            {
+                if (from.HasValue && to.HasValue && from.Value > to.Value)
+                {
+                    throw new BadRequest("Bad Request");
+                }
+                List<Sale> sale = await _saleQuery.GetSaleList(from, to);
+                return await _saleMapper.GetSaleGetResponse(sale);
+            }
+            catch (BadRequest ex)
+            {
+                throw new BadRequest(ex.Message);
+            }
         }
 
         public async Task<SaleResponse> GetSaleById(int saleId)
         {
             try
             {
-                if (!await CheckSaleId(saleId))
-                {
-                    throw new ExceptionNotFound("No Existe ese ID");
-                }
                 var sale = await _saleQuery.GetSaleById(saleId);
+
+                if (sale == null)
+                {
+                    throw new NotFoundException("Sale not found");
+                }
+
                 List<SaleProductResponse> saleProductResponses = await _saleProductServices.GetSaleProductsBySaleId(saleId);
                 int totalQuantity = 0;
                 foreach (SaleProductResponse saleProductResponse in saleProductResponses)
                 {
                     totalQuantity += saleProductResponse.Quantity;
                 }
+
                 return await _saleMapper.GetSaleResponse(sale, totalQuantity);
-            } catch (ExceptionNotFound ex)
+
+            }
+            catch (NotFoundException ex)
             {
-                throw new ExceptionNotFound(ex.Message);
+                throw new NotFoundException(ex.Message);
             }
         }
 
@@ -89,8 +123,8 @@ namespace Application.UseCases
         {
             decimal subtotal = CalculateSubTotal(productsWithQuantity);
             decimal totalDiscount = CalculateTotalDiscount(productsWithQuantity);
-            decimal taxes = subtotal * 0.21m;
-            decimal totalPay = Math.Round(CalculateTotal(subtotal, totalDiscount, taxes),2);
+            decimal totalPay = Math.Round(CalculateTotal(subtotal, totalDiscount), 2);
+            decimal taxes = totalPay * 0.21m;
             int totalQuantity = 0;
 
 
@@ -111,14 +145,9 @@ namespace Application.UseCases
         }
 
 
-        private async Task<bool> CheckSaleId(int id)
+        private decimal CalculateTotal(decimal subTotal, decimal totalDiscount)
         {
-            return (await _saleQuery.GetSaleById(id) != null);
-        }
-
-        private decimal CalculateTotal(decimal subTotal, decimal totalDiscount, decimal taxes)
-        {
-            decimal total = (subTotal - totalDiscount) + taxes;
+            decimal total = (subTotal - totalDiscount) * 1.21m;
             return total;
         }
 

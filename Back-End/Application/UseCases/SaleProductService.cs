@@ -1,16 +1,7 @@
 ﻿using Application.Interfaces.IMappers;
-using Application.Interfaces.product;
-using Application.Interfaces.sale;
 using Application.Interfaces.saleProduct;
-using Application.Mappers;
-using Application.Request;
 using Application.Responce;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.UseCases
 {
@@ -18,14 +9,11 @@ namespace Application.UseCases
     {
         private readonly ISaleProductQuery _saleProductQuery;
         private readonly ISaleProductMapper _saleProductMapper;
-        private readonly ISaleService _saleService;
-        private readonly IProductService _productService;
 
-        public SaleProductService(ISaleProductQuery query, ISaleProductMapper saleProductMapper, IProductService productService)
+        public SaleProductService(ISaleProductQuery query, ISaleProductMapper saleProductMapper)
         {
             _saleProductQuery = query;
             _saleProductMapper = saleProductMapper;
-            _productService= productService;
         }
 
         public async Task<List<SaleProduct>> GetAll()
@@ -47,23 +35,27 @@ namespace Application.UseCases
             return saleProductResponses;
         }
 
-        public async Task<List<SaleProduct>> ReturnSaleProducts(List<SaleProductRequest> saleProductRequests, Sale sale)
+        public async Task<List<SaleProduct>> ReturnSaleProducts(Dictionary<ProductResponse, int> productsWithQuantity, Sale sale)
         {
             List<SaleProduct> saleProducts = new List<SaleProduct>();
-            foreach (var saleProduct in saleProductRequests)
+            foreach (var saleProduct in productsWithQuantity)
             {
-                var product = await _productService.GetProductById(saleProduct.ProductId); 
                 SaleProduct saleProductCreated = new SaleProduct
                 {
-                    Product = saleProduct.ProductId,
+                    Product = saleProduct.Key.Id,
                     Sale = sale.SaleId,
-                    Quantity = saleProduct.Quantity,
-                    Price = product.Price,
-                    Discount = product.Discount,
+                    Quantity = saleProduct.Value,
+                    Price = saleProduct.Key.Price,
+                    Discount = saleProduct.Key.Discount,
                 };
                 saleProducts.Add(saleProductCreated);
             }
             return await Task.FromResult(saleProducts);
+        }
+
+        public async Task<bool> IsProductInAnySale(Guid productId)
+        {
+            return await _saleProductQuery.IsProductInAnySale(productId);
         }
 
     }

@@ -2,11 +2,6 @@
 using Domain.Entities;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Querys
 {
@@ -28,19 +23,20 @@ namespace Infrastructure.Querys
         {
             var query = _appDbContext.Sales.AsQueryable();
 
-
-
-            if (from != null)
+            if (from.HasValue)
             {
+                from = from.Value.Date; // Comienzo del día (00:00:00)
                 query = query.Where(s => s.Date >= from);
             }
-            if (to != null)
+
+            if (to.HasValue)
             {
-                to = to.Value.Date.AddDays(1).AddTicks(-1);
+                to = to.Value.Date.AddDays(1).AddTicks(-1); // Final del día (23:59:59.9999999)
                 query = query.Where(s => s.Date <= to);
             }
 
             return await query.ToListAsync();
         }
+
     }
 }

@@ -1,9 +1,4 @@
 ﻿using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Interfaces.saleProduct
 {
@@ -12,5 +7,6 @@ namespace Application.Interfaces.saleProduct
         Task<List<SaleProduct>> GetListSaleProducts();
         Task<SaleProduct> GetSaleProduct(int getSaleProductId);
         Task<List<SaleProduct>> GetSaleProductsBySaleId(int id);
+        Task<bool> IsProductInAnySale(Guid productId);
     }
 }

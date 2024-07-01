@@ -1,41 +1,38 @@
-﻿using Application.Interfaces.category;
+﻿using Application.Exceptions;
+using Application.Interfaces.category;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.UseCases
 {
     public class CategoryService : ICategoryService
     {
-        private readonly ICategoryCommand _categoryCommand;
         private readonly ICategoryQuery _categoryQuery;
 
-        public CategoryService(ICategoryCommand command, ICategoryQuery query)
+        public CategoryService(ICategoryQuery query)
         {
-            _categoryCommand = command;
             _categoryQuery = query;
         }
-        public async Task CreateCategory(Category category)
+
+        public async Task<List<Category>> GetAll()
         {
-            await _categoryCommand.InsertCategory(category);
+            return await _categoryQuery.GetListCategories();
         }
 
-        public async Task DeleteCategory(Category category)
+        public async Task<Category> GetById(int categoryId)
         {
-            await _categoryCommand.RemoveCategory(category);
+            if (!await CheckCategoryId(categoryId))
+            {
+                throw new NotFoundException("ID error");
+            }
+
+            return await _categoryQuery.GetCategory(categoryId);
         }
 
-        public Task<List<Category>> GetAll()
+        private async Task<bool> CheckCategoryId(int id)
         {
-            return Task.FromResult(_categoryQuery.GetListCategories());
+            return (await _categoryQuery.GetCategory(id) != null);
         }
 
-        public Task<Category> GetById(int categoryId)
-        {
-            return Task.FromResult(_categoryQuery.GetCategory(categoryId));
-        }
+
     }
 }

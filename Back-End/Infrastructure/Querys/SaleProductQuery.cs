@@ -2,11 +2,6 @@
 using Domain.Entities;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Querys
 {
@@ -34,5 +29,12 @@ namespace Infrastructure.Querys
             saleProducts = saleProducts.Where(s => s.Sale == id);
             return await saleProducts.ToListAsync();
         }
+        public async Task<bool> IsProductInAnySale(Guid productId)
+        {
+            var isProductInSale = await _appDbContext.SaleProducts.AnyAsync(sp => sp.Product == productId);
+            return isProductInSale;
+        }
     }
+
+
 }

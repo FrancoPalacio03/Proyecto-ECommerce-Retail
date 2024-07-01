@@ -1,15 +1,10 @@
 ﻿using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Interfaces.category
 {
     public interface ICategoryQuery
     {
-        List<Category> GetListCategories();
-        Category GetCategory(int categoryId);
+        Task<List<Category>> GetListCategories();
+        Task<Category> GetCategory(int categoryId);
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.Responce
+﻿namespace Application.Responce
 {
     public class ProductResponse
     {
@@ -14,6 +8,6 @@ namespace Application.Responce
         public decimal Price { get; set; }
         public int Discount { get; set; }
         public string imageUrl { get; set; }
-        public CategoryResponse categoryResponse { get; set; }
+        public category category { get; set; }
     }
 }

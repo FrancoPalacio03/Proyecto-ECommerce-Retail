@@ -1,11 +1,5 @@
-﻿using Application.Request;
-using Application.Responce;
+﻿using Application.Responce;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Interfaces.saleProduct
 {
@@ -14,6 +8,7 @@ namespace Application.Interfaces.saleProduct
         Task<List<SaleProduct>> GetAll();
         Task<List<SaleProductResponse>> GetSaleProductsBySaleId(int id);
         Task<SaleProduct> GetById(int saleProductId);
-        Task<List<SaleProduct>> ReturnSaleProducts(List<SaleProductRequest> saleProductRequests, Sale sale);
+        Task<List<SaleProduct>> ReturnSaleProducts(Dictionary<ProductResponse, int> productsWithQuantity, Sale sale);
+        Task<bool> IsProductInAnySale(Guid productId);
     }
 }

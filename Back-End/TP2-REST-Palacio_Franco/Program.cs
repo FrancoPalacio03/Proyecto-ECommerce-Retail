@@ -20,6 +20,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(op => op.UseSqlServer(connectionString));
 
+
 builder.Services.AddScoped<IProductCommand, ProductCommand>();
 builder.Services.AddScoped<IProductQuery, ProductQuery>();
 builder.Services.AddScoped<IProductService, ProductService>();
@@ -33,6 +34,9 @@ builder.Services.AddScoped<ISaleService, SaleService>();
 
 builder.Services.AddScoped<IProductMapper, ProductMapper>();
 builder.Services.AddScoped<ICategoryMapper, CategoryMapper>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICategoryQuery, CategoryQuery>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ISaleProductMapper, SaleProductMapper>();
 builder.Services.AddScoped<ISaleMapper, SaleMapper>();
 builder.Services.AddCors();

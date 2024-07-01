@@ -1,3 +1,6 @@
+const saleUrl = "https://localhost:7021/api/Sale/";
+const productUrl = "https://localhost:7021/api/Product/";
+
 let currentPage = 1;
 const productsPerPage = 6;
 
@@ -40,8 +43,8 @@ async function loadProducts(page) {
   const searchQuery = document.getElementById('search-input').value.trim();
   const offset = (page - 1) * productsPerPage;
   const url = searchQuery
-    ? `https://localhost:7021/api/ProductControler?&name=${encodeURIComponent(searchQuery)}&limit=${productsPerPage}&offset=${offset}`
-    : `https://localhost:7021/api/ProductControler?${categoriesQueryString}&limit=${productsPerPage}&offset=${offset}`;
+    ? `${productUrl}?&name=${encodeURIComponent(searchQuery)}&limit=${productsPerPage}&offset=${offset}`
+    : `${productUrl}?${categoriesQueryString}&limit=${productsPerPage}&offset=${offset}`;
 
   const loader = document.getElementById('loader');
   const noResults = document.getElementById('no-results');
